@@ -2,7 +2,7 @@
 lock '3.7.0'
 
 set :application, 'Ask4Referral'
-set :repo_url, 'https://github.com/nddeshmukh1610/Ask4Referral.git'
+set :repo_url, 'https://github.com/nddeshmukh1610/letstry.git'
 set :git_https_username, 'nddeshmukh1610'
 set :git_https_password, 'jaimatadi1610'
 
