@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.7.0'
 
-set :application, 'Ask4Referral'
+set :application, 'Ask4Referral1'
 set :repo_url, 'https://github.com/nddeshmukh1610/letstry.git'
 set :git_https_username, 'nddeshmukh1610'
 set :git_https_password, 'jaimatadi1610'
@@ -13,7 +13,7 @@ set :user, 'ubuntu'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, '/var/www/Ask4Referral'
+ set :deploy_to, '/var/www/Ask4Referral1'
 
 # Default value for :scm is :git
 # set :scm, :git
