@@ -1,0 +1,203 @@
+
+		<div class="main-slider"><!-- start main-headline section -->
+					<div id="home-slider" class="owl-carousel owl-theme" style="display: block; opacity: 1;">
+						<div class="owl-wrapper-outer">
+							<div class="owl-wrapper" style="width: 6332px; left: 0px; display: block;">
+								<div class="owl-item" style="width: 1583px;">
+									<div class="item-slide">
+										<%= image_tag("index.png", :alt => "Ask4Referral") %>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div><!-- end main-headline section -->
+
+		
+			<div class="headline container"><!-- start headline section -->
+					<div class="row">
+						<div class="col-md-6 align-right">
+							<h4>Referral Is Easiest Way To Find Dream Job</h4>
+							<p>Search job referrals on our portal. Request referral to interested jobs. We will search a referrer on behalf of you.</p>	<br>						
+							<p><%= link_to "FIND A JOB", findjobs_path(:keyword => "Null", :location => "Null"),class: "btn btn-yellow"   %><p>
+						</div>
+											
+						<div class="col-md-6 align-left">
+							<h4>Refer Skilled People, Earn Referral Bonus</h4>
+							<p>Send us the job on admin@ask4refferal.com or post here, We will find quality candidate and give you the matching profiles</p>	<br>						
+							<%= link_to "POST A JOB", new_job_path, class: "btn btn-default btn-light" %>
+							</div>
+						<div class="clearfix"></div>
+					</div>
+				
+			</div>
+
+
+
+<div class="recent-job">
+    <div class="container">                    
+           <h4>Recent Jobs</h4>
+           <div class="row">
+               <table width="100%" class="pure pure-table  pure-table-bordered pure-table-hover" id="results">
+                   <thead>
+                       <tr>
+                           <th width="42%">JOB DESCRIPTION</th>
+                           <th width="18%">COMPANY NAME</th>
+						   <th width="13%">LOCATION</th>
+                           <th width="13%">EXPERIENCE</th>                                                
+                           <th width="18%">POSTED</th>
+                           <th width="18%">Ask4Refferal</th>
+                    </tr>
+                   </thead>
+                   <tbody>
+						<% @jobs.each do |job| %>
+							<% if job.japproval.name == "Approved" %>
+								<% @localminexp = job.minexp %>
+								<% @localmaxexp = job.maxexp %>
+								<tr>
+									<td><%= link_to job.title, job %></td>
+									<td><%= job.company %></td>			  
+									<td><%= job.location.name %></td>
+									<td><%= "#{@localminexp} - #{@localmaxexp} Y" %></td>														
+									<td><%= job.created_at.strftime("%d-%b-%Y") %></td>
+									<td><%= link_to "Ask4Refferal", new_referral_path(:jobid => job.id) %></td>
+								</tr>
+							<% end %>
+						<% end %>
+					</tbody>
+               </table>  
+				<h6 class="general_heading" style="cursor: pointer; cursor: hand; "><div id="pageNavPosition"></div></h6>									
+           </div>                                                    
+    </div>				
+</div><!-- end Recent Job -->
+
+
+
+
+<div class="step-to">
+	<div class="container">
+				<h1>If you are looking for Job</h1>
+				<p>
+					Search job referrals on our portal. Request referral to interested jobs. We will search a referrer on behalf of you.
+				</p>
+	
+		<div class="step-spacer"></div>
+			<div id="step-image">
+				<div class="step-by-container">
+					<div class="step-by">
+						First Step
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-1.png", :alt => "Step-1") %>
+							</div>
+						</div>
+						<h5>Search Job</h5>
+					</div>
+								
+					<div class="step-by">
+						Second Step
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-2.png", :alt => "Step-2") %>
+							</div>
+						</div>
+						<h5>Ask4Referral</h5>
+					</div>
+								
+					<div class="step-by">
+						Third Step
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-3.png", :alt => "Step-3") %>
+							</div>
+						</div>
+						<h5>Upload your resume</h5>
+					</div>
+								
+					<div class="step-by">
+						Now it's our turn
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-4.png", :alt => "Step-4") %>
+							</div>
+						</div>
+						<h5>Now take rest :)</h5>
+					</div>
+								
+				</div>
+			</div>
+		<div class="step-spacer"></div>
+	</div>
+	
+</div>
+
+
+
+<div class="step-to">
+	<div class="container">
+				<h1>If you are Employer: </h1>
+				<p>
+					Send us the job detail on admin@ask4refferal.com or post yourself here, We will post on our portal and give you the matching profiles.
+				</p>
+	
+		<div class="step-spacer"></div>
+			<div id="step-image">
+				<div class="step-by-container">
+					<div class="step-by">
+						First Step
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-1.png", :alt => "Step-1") %>
+							</div>
+						</div>
+						<h5>Post Job</h5>
+					</div>
+								
+					<div class="step-by">
+						Second Step
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-2.png", :alt => "Step-2") %>
+							</div>
+						</div>
+						<h5>Wait for Admin</h5>
+					</div>
+					
+								
+					<div class="step-by">
+						Now it's our turn
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-4.png", :alt => "Step-4") %>
+							</div>
+						</div>
+						<h5>Now take rest :)</h5>
+					</div>
+							
+								
+					<div class="step-by">
+						Check mail box
+						<div class="step-by-inner">
+							<div class="step-by-inner-img">
+								<%= image_tag("image/step-icon-5.png", :alt => "Step-3") %>
+							</div>
+						</div>
+						<h5>Get quality profiles</h5>
+					</div>
+					
+				</div>
+			</div>
+		
+	</div>
+	
+</div>
+
+
+
+
+<div class="step-to">
+	<div class="container">
+				<h1><blink>Ask4Referral.com services are 100% free and will be free always.....</blink></h1>
+	</div>
+	
+</div>

@@ -1,0 +1,193 @@
+
+<div class="main-page-title"><!-- start main page title -->
+			<div class="container">
+				<div class="post-job-title">You are requesting Referral for Job : <%= params['jobid'] %></div>				
+			</div>
+
+</div><!-- end main page title -->
+					
+ 
+		
+		
+		<div class="container">
+		<div class="spacer-1">&nbsp;</div>
+			<div class="row">
+				<div class="col-md-8">
+				
+						<%= form_for(@referral) do |f| %>
+							<% if @referral.errors.any? %>
+							<div id="error_explanation">
+								<h3>Please try again with mandatory field marked as *</h3>
+							
+								<ul>
+								<%= @referral.errors.full_messages.first if @referral.errors.any? %>
+								</ul>
+							</div>
+						<% end %>
+						<form role="form" class="post-job-form">
+						
+						
+						
+						<div class="row">
+						<div class="form-group col-md-6">							
+							<strong>Job Location *</strong>
+							<%= f.select :location_id, Location.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"}, class: "form-control" %>
+						</div>
+												
+						<div class="form-group col-md-6">
+								<strong>Notice Period *</strong>
+								<%= f.select(:nperiod, [["Notice Period (Days)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30","31", "32", "33", "34", "35","36", "37", "38", "39", "40","41", "42", "43", "44", "45","46", "47", "48", "49", "50","51", "52", "53", "54", "55","56", "57", "58", "59", "60"], {}, class: "form-control" ) %> 									
+						</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6">
+								<strong>Experience *</strong> 							
+									<%= f.select(:exp, [["Exp (Years)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30"], {}, class: "form-control") %>
+							</div>
+							<div class="form-group col-md-6">							
+								<strong>Designation *</strong>
+								<%= f.text_field :designation, class: "form-control" %>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6">
+								<strong>Job Type *</strong>
+								<%= f.select :jtype_id, Jtype.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"}, class: "form-control" %>
+							</div>
+
+							<div class="form-group col-md-6">
+								<strong>Job Mode *</strong>
+								<%= f.select :mode_id, Mode.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"}, class: "form-control" %>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6">
+								
+							</div>
+
+							<div class="form-group col-md-6">
+								
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6">	
+								<strong>Salary *</strong> 
+								<div class="row">
+									<div class="form-group col-md-6">
+										<%= f.select(:currsalary, [["Current Salary (LPA)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30"], {}, class: "form-control") %>
+									</div>	
+									<div class="form-group col-md-6">
+										<%= f.select(:expsalary, [["Expected Salary (LPA)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30"], {}, class: "form-control") %> 
+									</div>	
+								</div>								
+							</div>
+													
+							<div class="form-group col-md-6">
+									<strong>Gender (Optional)</strong>
+									<%= f.select :gender_id, Gender.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"}, class: "form-control" %>
+							</div>
+						</div>			
+						
+						<h3>Contact Details</h3>
+						
+						<div class="row">
+						<div class="form-group col-md-6">
+							<strong>First Name *</strong>								
+								<%= f.text_field :fname, class: "form-control input" %>
+						</div>
+
+					   <div class="form-group col-md-6">
+								<strong>Last Name *</strong>
+								<%= f.text_field :lname, class: "form-control input" %>
+						</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6">
+								<strong>Contact Number *</strong>
+								<%= f.text_field :contactno, placeholder: "Ex. +919945508524", class: "form-control" %>
+							</div>
+												
+							<div class="form-group col-md-6">
+								<strong>Contact Email *</strong>
+								<%= f.text_field :contactemail, placeholder: "Ex. ram@gmail.com", class: "form-control input" %>
+							</div>
+						</div>
+						
+						<h3>Company Details</h3>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<strong>Company Name *</strong>
+								<%= f.text_field :company, placeholder: "Ex. IBM, TechM, Wipro", class: "form-control" %>
+							</div>
+
+							<div class="form-group col-md-6">
+								<strong>Company Url *</strong>
+								<%= f.text_field :comurl, placeholder: "Ex. www.ibm.com", class: "form-control" %>
+							</div>
+						</div>
+
+						<div class="form-group">
+								<strong>attachment *</strong>
+								<%= f.file_field :attachment %>
+								<%= f.hidden_field :attachment_cache %>
+						</div>
+						
+						<%= f.hidden_field :jobid, :value => params['jobid'] %>
+							
+						<div class="form-group">
+							
+							<%= f.submit  value="Submit Referral", class: "btn btn-green" %>
+						</div>
+					</form>
+					<div class="spacer-2">&nbsp;</div>
+				</div>
+				
+				
+				<div class="col-md-4">
+					<div class="job-side-wrap">
+						<li><%= link_to "HOME", root_path %></li>
+					</div>
+					
+					<div class="job-side-wrap">
+						<li><%= link_to "POST JOBS", new_job_path %></li>
+					</div>
+
+					<div class="job-side-wrap">
+						<li><%= link_to "FIND JOBS", findjobs_path(:keyword => "Null", :location => "Null")   %></li>
+					</div>
+
+
+					<div class="job-side-wrap">
+						<li><%= link_to "ABOUT US", about_path %></li>
+					</div>
+					<div class="job-side-wrap">
+						<li><%= link_to "CONTACT US", contact_path %></li>
+					</div>
+					<div class="job-side-wrap">
+						<li><%= link_to "CAREERS", career_path %></li>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="page-content"><!-- start content -->
+			<div class="content-about">
+				<div id="cs"><!-- CS -->
+					<div class="container">
+					<div class="spacer-1">&nbsp;</div>
+						<h2>Facing problem in creating referral? </h2>
+						<p>
+							Please send the resume on admin@ask4referral.com.
+						</p>
+						<h1 class="phone-cs">Call: +91-9945508524</h1>
+					</div>
+				</div><!-- CS -->
+			</div><!-- end content -->
+		</div><!-- end page content -->
+
+<% end %>

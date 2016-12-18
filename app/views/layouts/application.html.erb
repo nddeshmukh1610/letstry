@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Ask4Referral, Get Referred, Get Hired, Fast Recruitment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- CSS -->
+		<%= stylesheet_link_tag  'style.css',  'bootstrap.min.css', 'font-awesome.css', 'jslider.css', 'jslider.round.css', 'owl.carousel.css', 'owl.theme.css', 'owl.transitions.css', media: 'all', 'data-turbolinks-track' => true %>
+			
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+               
+      
+    </head>
+    
+<!--
+<marquee ONMOUSEOVER="this.stop();"
+            ONMOUSEOUT="this.start();"><font color="Blue">Welcome to Ask4Referral.com, Improvements are coming soon to the Ask4Referral.com, Suggestions/feedbacks on feedback@ask4refferal.com  </font></marquee>                        
+-->		
+ <body>
+	<div id="wrapper"><!-- start main wrapper -->
+		<div id="header"><!-- start main header -->
+			<div class="top-line">&nbsp;</div>
+			<div class="top"><!-- top -->
+				<div class="container">
+					<div class="media-top-right">
+						
+						
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div><!-- top -->
+			
+			<div class="container"><!-- container -->
+				<div class="row">
+					<div class="col-md-4"><!-- logo -->
+						<%= link_to root_path do %>
+						<%= image_tag("logo_26.JPG", :alt => "Ask4Referral") %>
+					<% end %>
+					</div><!-- logo -->
+					<div class="col-md-8 main-nav"><!-- Main Navigation -->
+						
+						<nav>
+							<ul class="menu">
+							
+								<li><%= link_to "HOME", root_path %></li>
+                                <li><%= link_to "POST JOBS", new_job_path %></li>
+                                <li><%= link_to "FIND JOBS", findjobs_path(:keyword => "Null", :location => "Null")  %></li>
+								<li><%= link_to "ABOUT US", about_path %></li>
+                                <li><%= link_to "CONTACT US", contact_path %></li>
+                                <li><%= link_to "CAREERS", career_path %></li>								
+							</ul>
+						</nav>
+					</div><!-- Main Navigation -->
+					<div class="clearfix"></div>
+				</div>
+			</div><!-- container -->
+		</div><!-- end main header -->                       
+  
+
+					
+
+
+<% flash.each do |key,value| %>
+<p><%= value %></P>
+<% end %>
+		
+<!--		<div class="hr-spacer100" ></div>
+				</br>
+				</br>				
+				<strong class="home-col-left">Ads</strong>
+				</br>
+				</br>
+		<div class="hr-spacer100"></div> -->
+				
+		<%= yield %>
+											
+											
+<!--		<div class="hr-spacer100" ></div>
+				</br>
+				</br>				
+				<strong class="home-col-left">Ads</strong> 
+				</br>
+				</br>
+		<div class="hr-spacer100"></div>-->
+		
+		
+	<div id="footer"><!-- Footer -->
+			<div class="container"><!-- Container -->
+				<div class="row">
+					<div class="col-md-5 footer-widget"><!-- Text Widget -->
+						<h6 class="widget-title">Our Mission</h6>
+						<div class="textwidget">
+							<p>Ask4Referral is to speed up the hiring process,we works on the professional networking principle.</p>
+							<p>We guarantee instant job offer beacuse.....</p>
+							<p>The survey data says that more than 60% jobs provided through internal referrals.</p>
+							<p>We will take care of fastest processing of your resume and avoid them to be in black holes.</p>
+							<p>Ask4Referral.com is free and will be free always...</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 footer-widget"><!-- Footer Menu Widget -->
+						<h6 class="widget-title">Useful Links</h6>
+						<div class="footer-widget-nav">
+							<ul>
+								<li><%= link_to "HOME", root_path %></li>
+                                <li><%= link_to "POST JOBS", new_job_path %></li>
+                                <li><%= link_to "FIND JOBS", findjobs_path(:keyword => "Null", :location => "Null")   %></li>
+								<li><%= link_to "ABOUT US", about_path %></li>
+                                <li><%= link_to "CONTACT US", contact_path %></li>
+                                <li><%= link_to "CAREERS", career_path %></li>	
+							</ul>
+						</div>
+					</div><!-- Footer Menu Widget -->
+					
+					
+					<div class="col-md-4 footer-widget"><!-- News Leter Widget -->
+						<h6 class="widget-title">Address</h6>
+						<div class="textwidget">
+							<p>Ask4Referral.com</p>
+							<p>Building Manyata, Near R.V. Public School</p>
+							<p>Mavali, Bengaluru-560004, India</p>
+							<p>Mobile: +91-9945508524</p>
+							<p>Email: contact_us@ask4referral.com</p>
+							<a href="https://www.facebook,com/ask4referral">@Facebook..</a>
+							<a href="https://www.facebook,com/ask4referral">@LinkedIn..</a>
+							<a href="https://www.facebook,com/ask4referral">@Twitter..</a>
+						</div>
+
+						
+					<div class="clearfix"></div>
+				</div>
+
+				
+				
+			</div><!-- Container -->
+			<div class="footer-credits">
+					2016 <a href="Ask4Referral.com">Ask4Referral.com</a>. All Rights Reserved.
+			</div>
+			
+		</div><!-- Footer -->
+	</div><!-- end main wrapper -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89035465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+       
+</body>
+</html>

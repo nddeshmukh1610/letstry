@@ -1,0 +1,134 @@
+<%= form_for @referral, html: { multipart: true } do |f| %>
+  <% if @referral.errors.any? %>
+    <div id="error_explanation">
+      <h2>Please try again with mandatory field marked as *</h2>
+
+      <ul>
+      <%= @referral.errors.full_messages.first if @referral.errors.any? %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="col-fullwidth">
+                <div class="whitebox padd-25 clearfix">
+                    
+                    <div class="col-left">
+						<h1>You are requesting Referral for Job : <%= params['jobid'] %></br></h1>
+						
+							<div class="col-half-left" >
+								<strong>First Name *</strong>
+								<%= f.text_field :fname %>
+							</div>
+							<div class="col-half-left" >
+								<strong>Last Name *</strong>
+								<%= f.text_field :lname %>
+							</div>
+							
+							<div class="hr-spacer"></div>
+							
+							<div class="col-half-left" >
+							<strong>Company *</strong>
+							<%= f.text_field :company %>
+							</div>
+							<div class="col-half-left" >
+								<strong>Company Url *</strong>
+								<%= f.text_field :comurl %>
+							</div>
+							
+							<div class="hr-spacer"></div>
+							
+							<div class="col-half-left" >
+								<strong>Designation *</strong>
+								<%= f.text_field :designation %>
+							</div>							
+							<div class="col-half-left" >
+								<strong>Contact Email *</strong>
+								<%= f.text_field :contactemail %>
+							</div>
+							
+							<div class="hr-spacer"></div>
+							
+							<div class="col-half-left" >
+								<strong>Contact No *</strong>
+								<%= f.text_field :contactno %>
+							</div>													
+							<div class="col-half-left" >
+								<strong>Job Location *</strong>
+								<%= f.select :location_id, Location.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"}, :style => "width:210px" %><br />
+							</div>
+							
+							<div class="hr-spacer"></div>
+							
+							<div class="col-half-left" >
+								<strong>Job Mode *</strong>
+								<%= f.select :mode_id, Mode.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"}, :style => "width:210px" %><br />
+							</div>
+							
+							<div class="col-half-left" >
+								<strong>Job Type *</strong>
+								<%= f.select :jtype_id, Jtype.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"}, :style => "width:210px" %>
+							</div>
+							
+							<div class="hr-spacer"></div>
+							
+							<div class="col-half-left">
+									<div style="display: inline-block;">
+											<strong>Current Salary *</strong>
+											<%= f.select(:currsalary, [["Current Salary (LPA)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30"], {}, :style => "width:210px" ) %> </br>
+									</div>
+							</div>		
+														
+							<div class="col-half-left">
+									<div style="display: inline-block;">
+											<strong>Expected Salary  *</strong>
+											<%= f.select(:expsalary, [["Expected Salary (LPA)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30"], {}, :style => "width:210px" ) %> </br>
+									</div>
+							</div>		
+							
+							<div class="hr-spacer"></div>
+							
+							<div class="col-half-left">
+									<div style="display: inline-block;">
+											<strong>Experience *</strong>
+											<%= f.select(:exp, [["Current Exp (Years)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30"], {}, :style => "width:210px" ) %> </br>
+									</div>
+							</div>	
+							
+							
+							
+							<div class="col-half-left">
+									<div style="display: inline-block;">
+											<strong>Notice Period *</strong>
+											
+											<%= f.select(:nperiod, [["Notice Period (Days)", ""],"0","1", "2", "3", "4", "5","6", "7", "8", "9", "10","11", "12", "13", "14", "15","16", "17", "18", "19", "20","21", "22", "23", "24", "25","26", "27", "28", "29", "30","31", "32", "33", "34", "35","36", "37", "38", "39", "40","41", "42", "43", "44", "45","46", "47", "48", "49", "50","51", "52", "53", "54", "55","56", "57", "58", "59", "60"], {}, :style => "width:210px" ) %> 									
+											
+									</div>
+							</div>
+														
+						<!--	<div class="col-half-left" >
+							<%= f.label :"Gender" %>
+								<%= f.select :gender_id, Gender.all.collect {|x| [x.name ,x.id]}, {:include_blank => "Select One"} %><br />
+							</div>
+						-->	
+							<div class="hr-spacer"></div>
+							
+							<div class="col-half-left">
+								<%= f.label :attachment %>
+								<%= f.file_field :attachment %>
+								<%= f.hidden_field :attachment_cache %>
+							</div>
+														
+							<%= f.hidden_field :jobid, :value => @jobid1 %>
+							
+							<div class="hr-spacer"></div>
+							
+							 <div class="col-half-left">
+								<%= f.submit %>
+							</div>
+					</div>	
+				</div>	
+			</div>	
+				
+   
+<% end %>
+

@@ -1,0 +1,4834 @@
+/* Active Admin CSS */
+/* line 37, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 49, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 51, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 53, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 55, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 126, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 57, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 27, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 28, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+body {
+  font-size: 75%;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* line 31, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #5E6469;
+}
+/* line 34, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+/* line 37, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+/* line 38, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+/* line 39, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+/* line 40, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+
+/* line 41, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+/* line 42, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 45, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+p {
+  margin: 0 0 1.5em;
+}
+/* line 48, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+p .left {
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+/* line 49, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+p .right {
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+
+/* line 52, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.left {
+  float: left !important;
+}
+
+/* line 53, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.right {
+  float: right !important;
+}
+
+/* line 55, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+blockquote {
+  margin: 1.5em;
+  color: #666;
+  font-style: italic;
+}
+
+/* line 56, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+strong, dfn {
+  font-weight: bold;
+}
+
+/* line 57, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+em, dfn {
+  font-style: italic;
+}
+
+/* line 58, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+sup, sub {
+  line-height: 0;
+}
+
+/* line 60, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+}
+
+/* line 62, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+
+/* line 63, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+del {
+  color: #666;
+}
+
+/* line 65, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+
+/* line 66, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+pre, code, tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+
+/* line 69, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+li ul,
+li ol {
+  margin: 0;
+}
+
+/* line 71, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 1.5em;
+}
+
+/* line 73, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 74, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 76, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+dl {
+  margin: 0 0 1.5em 0;
+}
+
+/* line 77, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+dl dt {
+  font-weight: bold;
+}
+
+/* line 78, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+dd {
+  margin-left: 1.5em;
+}
+
+/* line 81, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+
+/* line 82, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+th {
+  font-weight: bold;
+}
+
+/* line 83, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+thead th {
+  background: #c3d9ff;
+}
+
+/* line 84, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+th, td, caption {
+  padding: 4px 10px 4px 5px;
+}
+
+/* line 87, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.small {
+  font-size: .8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}
+
+/* line 88, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.large {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  margin-bottom: 1.25em;
+}
+
+/* line 89, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.hide {
+  display: none;
+}
+
+/* line 91, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.quiet {
+  color: #666;
+}
+
+/* line 92, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.loud {
+  color: #000;
+}
+
+/* line 93, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.highlight {
+  background: #ff0;
+}
+
+/* line 94, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.added {
+  background: #060;
+  color: #fff;
+}
+
+/* line 95, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.removed {
+  background: #900;
+  color: #fff;
+}
+
+/* line 97, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.first {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 98, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.last {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* line 99, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.top {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 100, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_typography.scss */
+.bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 4, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header {
+  background-color: #6a7176;
+  background-image: linear-gradient(180deg, #6a7176, #4d5256);
+  border-bottom: 1px solid #44484b;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  text-shadow: #000 0 1px 0;
+  display: table;
+  height: 20px;
+  width: 100%;
+  overflow: visible;
+  position: inherit;
+  padding: 5px 0;
+  z-index: 900;
+}
+/* line 16, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #cdcdcd;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  padding: 3px 30px 0 30px;
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 1.2;
+}
+/* line 28, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 a {
+  text-decoration: none;
+}
+/* line 31, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 a:hover {
+  color: #fff;
+}
+/* line 36, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 img {
+  position: relative;
+  top: -2px;
+}
+/* line 42, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header a, #header a:link {
+  color: #cdcdcd;
+}
+/* line 44, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header .header-item {
+  top: 2px;
+  position: relative;
+  height: 20px;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 57, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li {
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.0em;
+  position: relative;
+  /* Hover on li, display the ul */
+  /* Drop down menus */
+}
+/* line 65, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li a {
+  text-decoration: none;
+  padding: 6px 10px 4px 10px;
+  position: relative;
+  border-radius: 10px;
+}
+/* line 72, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.current > a {
+  background: #7b8389;
+  color: #fff;
+}
+/* line 77, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.has_nested > a {
+  background: url(/assets/active_admin/nested_menu_arrow-15084d93c65c1964d7077700ea748bd2d70cfa2d4c19707c58a9c64e232dd442.gif) no-repeat calc(100% - 7px) 50%;
+  padding-right: 20px;
+}
+/* line 82, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.has_nested.current > a {
+  background: #7b8389 url(/assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
+  padding-right: 20px;
+}
+/* line 87, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li:hover > a {
+  background: #7b8389;
+  color: #fff;
+}
+/* line 92, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.has_nested:hover > a {
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 5px solid #7b8389;
+  background: #7b8389 url(/assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
+  z-index: 1020;
+}
+/* line 101, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li:hover ul {
+  display: block;
+}
+/* line 103, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul {
+  background: #7b8389;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 1px 3px #444;
+  position: absolute;
+  width: 120%;
+  min-width: 175px;
+  max-width: calc(100% + 20px);
+  margin-top: 5px;
+  float: left;
+  display: none;
+  padding: 3px 0px 5px 0;
+  list-style: none;
+  z-index: 1010;
+}
+/* line 118, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li {
+  margin: 0px;
+}
+/* line 120, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li a {
+  background: none;
+  display: block;
+}
+/* line 123, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li a:hover {
+  color: #fff;
+  background: none;
+}
+/* line 127, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li.current a {
+  border-radius: 0;
+}
+/* line 135, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header #tabs {
+  width: 100%;
+}
+/* line 139, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav {
+  color: #aaa;
+  display: table-cell;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  padding-right: 26px;
+  text-align: right;
+}
+/* line 148, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav a {
+  text-decoration: none;
+}
+/* line 149, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav a:hover {
+  color: #fff;
+}
+/* line 151, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav li {
+  display: inline;
+}
+
+/* line 3, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form {
+  /* Reset margins & Padding */
+  /* Nested Fieldsets and Legends */
+  /* Text Fields */
+  /* semantic_errors */
+  /* Buttons */
+}
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form ul, form ol, form li, form fieldset, form legend, form input, form textarea, form select, form p {
+  margin: 0;
+  padding: 0;
+}
+/* line 6, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form ol, form ul {
+  list-style: none;
+}
+/* line 8, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset {
+  border: 0;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+/* line 13, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset.inputs {
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+}
+/* line 15, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset legend {
+  width: 100%;
+}
+/* line 17, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset legend span {
+  display: block;
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 20, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li {
+  padding: 10px;
+}
+/* line 22, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li label {
+  display: block;
+  width: 20%;
+  float: left;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #5E6469;
+}
+/* line 29, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li label abbr {
+  border: none;
+  color: #aaa;
+}
+/* line 36, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li.has_many_container {
+  padding: 20px 10px;
+}
+/* line 38, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li.has_many_container h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 42, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li.has_many_container .has_many_fields {
+  margin: 10px 0;
+}
+/* line 45, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li > li label {
+  line-height: 100%;
+  padding-top: 0;
+}
+/* line 48, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li > li label input {
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: -0.1em;
+}
+/* line 57, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form .has_many_fields {
+  position: relative;
+}
+/* line 60, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form .has_many_container .handle {
+  position: absolute;
+  top: calc(50% - 3em / 2);
+  right: 2px;
+  padding: 0;
+  cursor: move;
+}
+/* line 69, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form .has_many_container.ui-sortable .has_many_container {
+  margin-right: 2em;
+}
+/* line 76, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form .ui-sortable input[type=text], form .ui-sortable input[type=password], form .ui-sortable input[type=email], form .ui-sortable input[type=number], form .ui-sortable input[type=url], form .ui-sortable input[type=tel], form .ui-sortable textarea {
+  width: calc(80% - 22px - 2em - 1px);
+}
+/* line 84, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+}
+/* line 89, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset legend {
+  position: absolute;
+  width: 95%;
+  padding-top: 0.1em;
+  left: 0px;
+  font-size: 100%;
+  font-weight: normal;
+}
+/* line 96, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset legend span {
+  position: absolute;
+}
+/* line 97, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset legend.label label {
+  position: absolute;
+}
+/* line 100, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset:not(.has_many_fields) ol {
+  float: left;
+  width: 74%;
+  margin: 0;
+  padding: 0 0 0 20%;
+}
+/* line 106, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset:not(.has_many_fields) ol li {
+  padding: 0;
+  border: 0;
+}
+/* line 112, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset.has_many_fields ol {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+/* line 121, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=number],
+form input[type=url],
+form input[type=tel],
+form input[type=date],
+form textarea {
+  width: calc(80% - 22px);
+  border: 1px solid #c9d0d6;
+  border-radius: 3px;
+  font-size: 0.95em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 8px 10px 7px;
+}
+/* line 137, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus,
+form input[type=number]:focus,
+form input[type=url]:focus,
+form input[type=tel]:focus,
+form input[type=date]:focus,
+form textarea:focus {
+  border: 1px solid #99a2aa;
+  box-shadow: 0 0 4px #99a2aa;
+}
+/* line 143, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=date] {
+  width: calc(100% - 22px);
+}
+/* line 147, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li {
+  /* Hints */
+  /* Date and Time Fields */
+  /* Check Boxes or Radio fields */
+  /* Boolean Field */
+  /* Hidden fields */
+  /* Errors */
+}
+/* line 150, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li p.inline-hints {
+  font-size: 0.95em;
+  font-style: italic;
+  color: #666;
+  margin: 0.5em 0 0 20%;
+}
+/* line 159, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.date_select fieldset ol li, form fieldset > ol > li.time_select fieldset ol li, form fieldset > ol > li.datetime_select fieldset ol li {
+  float: left;
+  width: auto;
+  margin: 0 0.5em 0 0;
+}
+/* line 161, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.date_select fieldset ol li label, form fieldset > ol > li.time_select fieldset ol li label, form fieldset > ol > li.datetime_select fieldset ol li label {
+  display: none;
+}
+/* line 162, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.date_select fieldset ol li input, form fieldset > ol > li.time_select fieldset ol li input, form fieldset > ol > li.datetime_select fieldset ol li input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 168, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol, form fieldset > ol > li.radio fieldset ol {
+  margin-bottom: -0.6em;
+}
+/* line 170, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol li, form fieldset > ol > li.radio fieldset ol li {
+  margin: 0.1em 0 0.5em 0;
+}
+/* line 172, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol li label, form fieldset > ol > li.radio fieldset ol li label {
+  float: none;
+  width: 100%;
+}
+/* line 175, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol li label input, form fieldset > ol > li.radio fieldset ol li label input {
+  margin-right: 0.2em;
+}
+/* line 182, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.boolean {
+  min-height: 1.1em;
+}
+/* line 184, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.boolean label {
+  width: 80%;
+  padding-left: 20%;
+  padding-right: 10px;
+  text-transform: none !important;
+  font-weight: normal;
+}
+/* line 190, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.boolean label input {
+  margin: 0 0.5em 0 0.2em;
+}
+/* line 195, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.hidden {
+  padding: 0;
+}
+/* line 200, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li p.inline-errors {
+  color: #932419;
+  font-weight: bold;
+  margin: 0.3em 0 0 20%;
+}
+/* line 205, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li ul.errors {
+  color: #932419;
+  margin: 0.5em 0 0 20%;
+  list-style: square;
+}
+/* line 209, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+/* line 213, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.error input[type=text], form fieldset > ol > li.error input[type=password], form fieldset > ol > li.error input[type=email], form fieldset > ol > li.error input[type=number], form fieldset > ol > li.error input[type=url], form fieldset > ol > li.error input[type=tel], form fieldset > ol > li.error textarea {
+  border: 1px solid #932419;
+}
+/* line 220, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form ul.errors {
+  background: #fae6e4;
+  border-radius: 4px;
+  color: #932419;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style: square;
+}
+/* line 228, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form ul.errors li {
+  margin-left: 15px;
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+/* line 233, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=submit], form input[type=button], form button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+  cursor: pointer;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form input[type=submit].disabled, form input[type=button].disabled, form button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form input[type=submit]:not(.disabled):hover, form input[type=button]:not(.disabled):hover, form button:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form input[type=submit]:not(.disabled):active, form input[type=button]:not(.disabled):active, form button:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+/* line 239, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form .buttons, form .actions {
+  margin-top: 15px;
+}
+/* line 241, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form .buttons input[type=submit], form .buttons input[type=button], form .buttons button, form .actions input[type=submit], form .actions input[type=button], form .actions button {
+  margin-right: 10px;
+}
+/* line 244, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset.buttons li, form fieldset.actions li {
+  float: left;
+  padding: 0;
+}
+/* line 248, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset.buttons li.cancel a, form fieldset.actions li.cancel a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form fieldset.buttons li.cancel a.disabled, form fieldset.actions li.cancel a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form fieldset.buttons li.cancel a:not(.disabled):hover, form fieldset.actions li.cancel a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form fieldset.buttons li.cancel a:not(.disabled):active, form fieldset.actions li.cancel a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 258, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+.sidebar_section label {
+  display: block;
+  text-transform: uppercase;
+  color: #5E6469;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+/* line 266, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+.sidebar_section select {
+  width: 240px;
+}
+/* line 270, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+.sidebar_section input[type=text], .sidebar_section input[type=password], .sidebar_section input[type=email], .sidebar_section input[type=url], .sidebar_section input[type=tel], .sidebar_section textarea {
+  width: 220px;
+}
+
+/* line 288, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field {
+  margin-bottom: 10px;
+  clear: both;
+}
+/* line 293, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.select_and_search input[type=text] {
+  margin-left: 16px;
+  width: 88px;
+}
+/* line 297, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.select_and_search select {
+  width: 108px;
+}
+/* line 303, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes label {
+  margin-bottom: 3px;
+}
+/* line 304, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes fieldset {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+/* line 308, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes .check_boxes_wrapper label {
+  font-weight: normal;
+  margin-bottom: 3px;
+  text-transform: none;
+  font-size: 1.0em;
+}
+/* line 313, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes .check_boxes_wrapper label input {
+  vertical-align: baseline;
+}
+/* line 318, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_date_range .seperator {
+  display: inline-block;
+  text-align: center;
+  width: 12px;
+}
+/* line 324, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_date_range input[type=text] {
+  background: #fff url(/assets/active_admin/datepicker/datepicker-input-icon-d9c2bb73769af777c8a71720d29741f3a499aebd5a043e9a119bd0d9597aed47.png) no-repeat 100% 7px;
+  padding-right: 27px;
+  width: 71px;
+}
+/* line 331, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form a.clear_filters_btn {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form.filter_form a.clear_filters_btn.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form.filter_form a.clear_filters_btn:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form.filter_form a.clear_filters_btn:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 4, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment {
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+/* line 10, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment .active_admin_comment_meta {
+  width: 130px;
+  float: left;
+  overflow: hidden;
+  font-size: 0.9em;
+  color: #767e84;
+}
+/* line 16, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment .active_admin_comment_meta .active_admin_comment_author {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  color: #5E6469;
+}
+/* line 23, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment .active_admin_comment_body {
+  margin-left: 150px;
+}
+/* line 27, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment {
+  margin: 0;
+  padding: 0;
+  margin-left: 150px;
+}
+/* line 32, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment fieldset.inputs {
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+/* line 38, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment li {
+  padding: 0;
+}
+/* line 39, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment fieldset.buttons {
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* line 2, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_in .flash {
+  background-color: #f7f1d3;
+  background-image: linear-gradient(180deg, #f7f1d3, #f5edc5);
+  text-shadow: #fafafa 0 1px 0;
+  border-bottom: 1px solid #eee098;
+  color: #cb9810;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.0em;
+  padding: 13px 30px 11px;
+  position: relative;
+}
+/* line 13, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_in .flash.flash_notice {
+  background-color: #dce9dd;
+  background-image: linear-gradient(180deg, #dce9dd, #ccdfcd);
+  border-bottom: 1px solid #adcbaf;
+  color: #416347;
+}
+/* line 18, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_in .flash.flash_error {
+  background-color: #f5e4e4;
+  background-image: linear-gradient(180deg, #f5e4e4, #f1dcdc);
+  border-bottom: 1px solid #e0c2c0;
+  color: #b33c33;
+}
+
+/* line 27, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_out .flash {
+  box-shadow: none;
+  text-shadow: #fff 0 1px 0;
+  background: none;
+  color: #666;
+  font-weight: bold;
+  line-height: 1.0em;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+/* line 2, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker {
+  background: #fff;
+  background-clip: padding-box;
+  color: #fff;
+  display: none;
+  margin-top: 2px;
+  padding: 0;
+  text-align: center;
+  width: 160px;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker a {
+  text-decoration: none;
+}
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker a:hover {
+  cursor: pointer;
+}
+/* line 19, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header {
+  height: 14px;
+  background-color: #6a7176;
+  background-image: linear-gradient(180deg, #6a7176, #4d5256);
+  border-bottom: 1px solid #44484b;
+  padding: 12px 5px 7px 4px;
+  margin: 0px 0px 2px 2px;
+  width: 147px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  position: relative;
+  z-index: 2000;
+}
+/* line 30, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header:before {
+  content: "";
+  position: absolute;
+  right: 45%;
+  top: -6px;
+  width: 0px;
+  height: 0px;
+  border-left: 8.5px solid transparent;
+  border-right: 8.5px solid transparent;
+  border-bottom: 10px solid #676e73;
+}
+/* line 42, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+  text-shadow: #000 0 1px 0;
+  color: #fff;
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 0.8em;
+  text-align: center;
+}
+/* line 51, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title .ui-datepicker-month {
+  margin: -4px 0 0 0;
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title .ui-datepicker-year {
+  margin: -4px 0 0 0;
+}
+/* line 60, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a {
+  color: #fff;
+  display: block;
+  height: 19px;
+  margin-top: -4px;
+  width: 10px;
+}
+/* line 67, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev {
+  float: left;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 4px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid white;
+  border-bottom: 5px solid transparent;
+}
+/* line 76, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next {
+  float: right;
+  width: 0;
+  height: 0;
+  margin: 0px 4px 0px 0px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid white;
+  border-bottom: 5px solid transparent;
+}
+/* line 86, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a span {
+  display: none;
+}
+/* line 92, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar {
+  border-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.26);
+  background-color: #f4f4f4;
+  border: solid 1px #63686e;
+  left: 2px;
+  margin-bottom: 0px;
+  position: relative;
+  top: -2px;
+  width: 156px;
+}
+/* line 103, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar td, .ui-datepicker table.ui-datepicker-calendar th {
+  padding: 0px;
+  text-align: center;
+}
+/* line 108, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar thead th {
+  background-color: #dbdddf;
+  color: #333333;
+  font-weight: normal;
+  font-size: 0.8em;
+  padding-top: 1px;
+}
+/* line 116, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody {
+  color: #666666;
+}
+/* line 119, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td {
+  border: none;
+  height: 24px;
+  width: 22px;
+}
+/* line 124, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a {
+  border-radius: 3px;
+  color: #666666;
+  font-weight: bold;
+  font-size: 0.85em;
+  padding: 4px;
+}
+/* line 131, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-active {
+  background-color: #5a5f64;
+  color: #fff;
+}
+/* line 134, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-active.ui-state-hover {
+  background-color: #5a5f64;
+  color: #fff;
+}
+/* line 139, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-hover {
+  background-color: #eceef0;
+}
+/* line 142, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-highlight {
+  background-color: #dbdddf;
+}
+
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table tr td {
+  vertical-align: top;
+}
+
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 0;
+  border-spacing: 0;
+}
+/* line 18, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+  border-right: none;
+  text-align: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+/* line 25, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th a, table.index_table th a:link, table.index_table th a:visited {
+  color: #5E6469;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+/* line 32, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sortable a {
+  background: url(/assets/active_admin/orderable-29374dbb55b0012d78a37c614d573bb3474f0779849b478a147d0f1845ca6617.png) no-repeat 0 4px;
+  padding-left: 13px;
+}
+/* line 36, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sorted-asc a {
+  background-position: 0 -27px;
+}
+/* line 37, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sorted-desc a {
+  background-position: 0 -56px;
+}
+/* line 39, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sorted-asc, table.index_table th.sorted-desc {
+  background-color: #e2e2e2;
+  background-image: linear-gradient(180deg, #e2e2e2, #d2d4d6);
+}
+/* line 43, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th:last-child {
+  border-right: solid 1px #d4d4d4;
+}
+/* line 49, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table tr.even td {
+  background: #f4f5f5;
+}
+/* line 51, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table tr.selected td {
+  background: #d9e4ec;
+}
+/* line 55, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table td {
+  padding: 10px 12px 8px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  vertical-align: top;
+}
+
+/* line 64, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table {
+  margin-top: 5px;
+}
+/* line 66, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table th {
+  padding-top: 10px;
+  background: none;
+  color: #5E6469;
+  box-shadow: none;
+  text-shadow: #fff 0 1px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+}
+/* line 75, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table tr.odd td {
+  background: #ecedee;
+}
+/* line 76, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table tr.even td {
+  background: #f4f5f5;
+}
+
+/* line 80, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table {
+  overflow: hidden;
+}
+
+/* line 83, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table col.even {
+  background: #f4f5f5;
+}
+/* line 84, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table col.odd {
+  background: #ecedee;
+}
+/* line 85, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table th, .attributes_table table td {
+  padding: 8px 12px 6px 12px;
+  vertical-align: top;
+  border-bottom: 1px solid #e8e8e8;
+}
+/* line 90, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table th {
+  box-shadow: none;
+  background-color: none;
+  width: 150px;
+  font-size: 0.9em;
+  padding-left: 0;
+  text-transform: uppercase;
+  color: #5E6469;
+  text-shadow: #fff 0 1px 0;
+}
+/* line 101, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table td .empty {
+  color: #bbb;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* line 110, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tables.scss */
+.sidebar_section .attributes_table th {
+  width: 50px;
+}
+
+/* line 20, /var/lib/gems/2.3.0/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+#collection_selection_toggle_panel::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 3, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_batch_actions.scss */
+#collection_selection_toggle_panel > .resource_selection_toggle_cell {
+  float: left;
+}
+/* line 6, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_batch_actions.scss */
+#collection_selection_toggle_panel #collection_selection_toggle_explaination {
+  float: left;
+  margin-left: 5px;
+  font-style: italic;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-widget-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+}
+
+/* line 8, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog {
+  position: fixed;
+  z-index: 1002;
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-titlebar {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 16, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-titlebar span {
+  font-size: 1.1em;
+}
+/* line 19, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog ul {
+  list-style-type: none;
+}
+/* line 20, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog li {
+  margin: 10px 0;
+}
+/* line 21, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog label {
+  margin-right: 10px;
+}
+/* line 23, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-buttonpane, .ui-dialog form {
+  padding: 7px 15px 13px;
+}
+/* line 27, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-buttonpane button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+/* line 28, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 33, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.active_admin_dialog.ui-dialog .ui-dialog-titlebar-close {
+  display: none;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.blank_slate_container {
+  clear: both;
+  text-align: center;
+}
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.blank_slate_container .blank_slate {
+  border-radius: 3px;
+  border: 1px dashed #DADADA;
+  color: #AAA;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 14px 25px;
+  text-align: center;
+}
+/* line 15, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.blank_slate_container .blank_slate small {
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* line 23, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.admin_dashboard .blank_slate_container .blank_slate {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 28, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.with_sidebar .blank_slate_container .blank_slate {
+  margin-top: 80px;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb {
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: 1.0em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+/* line 9, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb a, .breadcrumb a:link, .breadcrumb a:visited, .breadcrumb a:active {
+  color: #8a949e;
+  text-decoration: none;
+}
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+/* line 16, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb .breadcrumb_sep {
+  margin: 0 2px;
+  color: #aab2ba;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu {
+  display: inline;
+}
+/* line 4, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  position: relative;
+  padding-right: 22px !important;
+  cursor: pointer;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.dropdown_menu .dropdown_menu_button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.dropdown_menu .dropdown_menu_button:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.dropdown_menu .dropdown_menu_button:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 10, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_button:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 3px 3px 0;
+  border-style: solid;
+  border-color: #FFF transparent;
+  right: 12px;
+  top: 45%;
+}
+/* line 22, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_button:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 3px 3px 0;
+  border-style: solid;
+  border-color: #777 transparent;
+  right: 12px;
+  top: 45%;
+}
+/* line 35, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_nipple {
+  content: "";
+  position: absolute;
+  top: -6px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px;
+  border-style: solid;
+  border-color: #545a5e transparent;
+  z-index: 100;
+}
+/* line 51, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_nipple:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 0 5px 5px;
+  border-style: solid;
+  border-color: #838a90 transparent;
+  left: -5px;
+  top: 1px;
+}
+/* line 65, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_nipple:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 0 5px 5px;
+  border-style: solid;
+  border-color: #686e74 transparent;
+  left: -5px;
+  top: 2px;
+}
+/* line 78, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper {
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, #838a90 0px 1px 0px 0px inset;
+  background-color: #5E6469;
+  background-color: #686e74;
+  background-image: linear-gradient(180deg, #686e74, #52575c);
+  border: solid 1px #464a4e;
+  border-top-color: #545a5e;
+  border-bottom-color: #35383b;
+  border-radius: 4px;
+  z-index: 2000;
+  display: none;
+}
+/* line 93, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list {
+  display: block;
+  background-color: #FFF;
+  border: solid 1px #464a4e;
+  box-shadow: #6a7176 0px 1px 0px 0px;
+  border-radius: 3px;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 106, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li {
+  display: block;
+  border-bottom: solid 1px #ebebeb;
+  box-sizing: border-box;
+}
+/* line 111, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li a {
+  display: block;
+  box-sizing: padding-box;
+  font-size: 0.95em;
+  font-weight: bold;
+  padding: 7px 16px 5px;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 121, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li a:hover {
+  background-color: #75a1c2;
+  background-image: linear-gradient(180deg, #75a1c2, #608cb4);
+  text-shadow: #5a83aa 0 1px 0;
+  color: #FFF;
+}
+/* line 127, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li a:active {
+  background-color: #608cb4;
+  background-image: linear-gradient(180deg, #608cb4, #75a1c2);
+  color: #FFF;
+}
+/* line 135, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li:first-child a {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+/* line 142, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li:last-child {
+  border: none;
+}
+/* line 143, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li:last-child a {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_buttons.scss */
+a.member_link {
+  margin-right: 7px;
+  white-space: nowrap;
+}
+
+/* line 6, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_buttons.scss */
+a.button, a:link.button, a:visited.button, input[type=submit], input[type=button], button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.button.disabled, a:link.button.disabled, a:visited.button.disabled, input[type=submit].disabled, input[type=button].disabled, button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.button:not(.disabled):hover, a:link.button:not(.disabled):hover, a:visited.button:not(.disabled):hover, input[type=submit]:not(.disabled):hover, input[type=button]:not(.disabled):hover, button:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.button:not(.disabled):active, a:link.button:not(.disabled):active, a:visited.button:not(.disabled):active, input[type=submit]:not(.disabled):active, input[type=button]:not(.disabled):active, button:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+
+/* line 2, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_grid.scss */
+table.index_grid td {
+  border: none;
+  background: none;
+  padding: 0 20px 20px 0;
+  margin: 0;
+}
+
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_grid.scss */
+.columns {
+  clear: both;
+  padding: 0;
+}
+/* line 8, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_grid.scss */
+.columns .column {
+  float: left;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_links.scss */
+a, a:link, a:visited {
+  color: #38678b;
+  text-decoration: underline;
+}
+
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_links.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.paginated_collection_contents {
+  clear: both;
+}
+
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination {
+  float: right;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+/* line 10, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination span.page.current {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination span.page.current.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination span.page.current:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination span.page.current:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+/* line 18, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination a, .pagination span.page.current {
+  border-radius: 0px;
+  margin-right: 4px;
+  padding: 2px 5px;
+}
+
+/* line 25, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_information {
+  float: right;
+  margin-bottom: 5px;
+  color: #b3bcc1;
+}
+/* line 29, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_information b {
+  color: #5c6469;
+}
+
+/* line 32, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.download_links {
+  float: left;
+}
+
+/* line 36, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_per_page {
+  float: right;
+  margin-left: 4px;
+}
+/* line 39, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_per_page select {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  border-radius: 0px;
+  padding: 1px 5px;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination_per_page select.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination_per_page select:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination_per_page select:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 2, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_panels.scss */
+.section, .panel {
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+  margin-bottom: 20px;
+}
+/* line 27, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section > h3, .panel > h3 {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 30, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section > h3 .header_action, .panel > h3 .header_action {
+  float: right;
+}
+/* line 35, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section > div, .panel > div {
+  padding: 3px 15px 15px 15px;
+}
+/* line 37, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section hr, .panel hr {
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* line 6, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_panels.scss */
+.sidebar_section {
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+  margin-bottom: 20px;
+}
+/* line 27, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section > h3 {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 30, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section > h3 .header_action {
+  float: right;
+}
+/* line 35, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section > div {
+  padding: 3px 15px 15px 15px;
+}
+/* line 37, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section hr {
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_columns.scss */
+.columns {
+  margin-bottom: 10px;
+}
+
+/* line 3, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_scopes.scss */
+.scopes li .count {
+  color: #8e979e;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 10px;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag {
+  background: #cacaca;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 3px 5px 2px 5px;
+  font-size: 0.8em;
+}
+/* line 9, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.ok, .status_tag.published, .status_tag.complete, .status_tag.completed, .status_tag.green {
+  background: #8daa92;
+}
+/* line 10, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.warn, .status_tag.warning, .status_tag.orange {
+  background: #e29b20;
+}
+/* line 11, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.error, .status_tag.errored, .status_tag.red {
+  background: #d45f53;
+}
+/* line 13, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.yes {
+  background: #6090DB;
+}
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.no {
+  background: grey;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools {
+  margin-bottom: 16px;
+}
+/* line 20, /var/lib/gems/2.3.0/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+.table_tools::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 6, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools .dropdown_menu {
+  float: left;
+}
+
+/* line 10, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+a.table_tools_button, .table_tools .dropdown_menu_button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F0F0F0);
+  border-color: #d0d0d0;
+  border-top-color: #d9d9d9;
+  border-right-color: #d0d0d0;
+  border-bottom-color: #c5c5c5;
+  border-left-color: #d0d0d0;
+  font-size: 0.9em;
+  padding: 4px 14px 4px;
+  margin: 0;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.table_tools_button.disabled, .table_tools .dropdown_menu_button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.table_tools_button:not(.disabled):hover, .table_tools .dropdown_menu_button:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.table_tools_button:not(.disabled):active, .table_tools .dropdown_menu_button:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 19, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+a.table_tools_button:not(.disabled):hover, .table_tools .dropdown_menu_button:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F6F6F6);
+}
+/* line 23, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+a.table_tools_button:not(.disabled):active, .table_tools .dropdown_menu_button:not(.disabled):active {
+  border-color: #c8c8c8;
+  border-top-color: #d7d7d7;
+  border-right-color: #c8c8c8;
+  border-bottom-color: #c3c3c3;
+  border-left-color: #c8c8c8;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17) inset;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E8E8E8);
+}
+
+/* line 31, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 36, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li {
+  float: left;
+}
+/* line 39, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li a {
+  border-width: 1px .5px 1px .5px;
+  border-radius: 0;
+}
+/* line 44, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li:first-child a {
+  border-left-width: 1px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li:last-child a {
+  border-right-width: 1px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* line 56, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li.selected a {
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1) inset;
+  cursor: default;
+}
+/* line 61, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li.selected a:hover {
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_index_list.scss */
+.indexes {
+  float: right;
+}
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_index_list.scss */
+.indexes li .count {
+  color: #8e979e;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 10px;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_unsupported_browser.scss */
+.unsupported_browser {
+  padding: 10px 30px;
+  color: #211e14;
+  background-color: #fae692;
+  background-color: #feefae;
+  background-image: linear-gradient(180deg, #feefae, #fae692);
+  border-bottom: 1px solid #b3a569;
+}
+/* line 8, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_unsupported_browser.scss */
+.unsupported_browser h1 {
+  font-size: 13px;
+  font-weight: bold;
+}
+/* line 13, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_unsupported_browser.scss */
+.unsupported_browser p {
+  margin-bottom: 0.5em;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav {
+  list-style: none;
+  display: block;
+  width: auto;
+  margin-bottom: -12px;
+  padding-left: 0;
+  overflow: auto;
+  margin-left: 15px;
+}
+/* line 10, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+/* line 17, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li:first-child a {
+  border-left-width: 1px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+/* line 23, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li:last-child a {
+  border-right-width: 1px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* line 29, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F0F0F0);
+  border-color: #d0d0d0;
+  border-top-color: #d9d9d9;
+  border-right-color: #d0d0d0;
+  border-bottom-color: #c5c5c5;
+  border-left-color: #d0d0d0;
+  text-decoration: none;
+  border-radius: 0;
+  border-width: 1px .5px 1px .5px;
+  margin-right: 0;
+  padding: 4px 14px 4px;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-tabs-nav li a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-tabs-nav li a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-tabs-nav li a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 40, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F6F6F6);
+}
+/* line 47, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li.ui-tabs-active a {
+  cursor: default;
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1) inset;
+}
+/* line 52, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li.ui-tabs-active a a:hover {
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+}
+
+/* line 60, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.tab-content {
+  border: 1px solid #D3D3D3;
+  padding: 15px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out {
+  background: #e8e9ea;
+}
+/* line 4, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #content_wrapper {
+  width: 500px;
+  margin: 70px auto;
+}
+/* line 7, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #content_wrapper #active_admin_content {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  background: #fff;
+  padding: 13px 30px;
+}
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out h2 {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+  background-color: #6a7176;
+  background-image: linear-gradient(180deg, #6a7176, #4d5256);
+  border-bottom: 1px solid #44484b;
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #fff;
+  margin: -13px -30px 20px -30px;
+}
+/* line 24, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login {
+  /* Login Form */
+}
+/* line 27, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset {
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+/* line 31, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset li {
+  padding: 10px 0;
+}
+/* line 33, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset input[type=text], body.logged_out #login form fieldset input[type=email], body.logged_out #login form fieldset input[type=password] {
+  width: 70%;
+}
+/* line 36, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset.buttons {
+  margin-left: 20%;
+}
+/* line 41, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login a {
+  float: right;
+  margin-top: -32px;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_footer.scss */
+#footer {
+  padding: 30px 30px;
+  font-size: 0.8em;
+  clear: both;
+}
+/* line 6, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_footer.scss */
+#footer p {
+  padding-top: 10px;
+}
+
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_footer.scss */
+#index_footer {
+  padding-top: 5px;
+  text-align: right;
+  font-size: 0.85em;
+}
+
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_footer.scss */
+.index_content {
+  clear: both;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#wrapper {
+  width: 100%;
+}
+
+/* line 5, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+.index #wrapper {
+  display: table;
+}
+
+/* line 9, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content {
+  margin: 0;
+  padding: 30px;
+}
+/* line 13, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content #main_content_wrapper {
+  float: left;
+  width: 100%;
+}
+/* line 17, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content #main_content_wrapper #main_content {
+  margin-right: 300px;
+}
+/* line 22, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content.without_sidebar #main_content_wrapper #main_content {
+  margin-right: 0;
+}
+/* line 24, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content #sidebar {
+  float: left;
+  width: 270px;
+  margin-left: -270px;
+}
+
+/* line 1, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  display: table;
+  border-bottom-color: #EEE;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 30px;
+  z-index: 800;
+}
+/* line 20, /var/lib/gems/2.3.0/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+#title_bar::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 14, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar #titlebar_left, #title_bar #titlebar_right {
+  height: 50px;
+  vertical-align: middle;
+  display: table-cell;
+}
+/* line 20, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar #titlebar_right {
+  text-align: right;
+}
+/* line 24, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.6em;
+  line-height: 100%;
+  font-weight: bold;
+}
+/* line 34, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar .action_items span.action_item > a, #title_bar .action_items span.action_item > .dropdown_menu > a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  padding: 12px 17px 10px;
+  margin: 0px;
+}
+/* line 12, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+#title_bar .action_items span.action_item > a.disabled, #title_bar .action_items span.action_item > .dropdown_menu > a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+#title_bar .action_items span.action_item > a:not(.disabled):hover, #title_bar .action_items span.action_item > .dropdown_menu > a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+#title_bar .action_items span.action_item > a:not(.disabled):active, #title_bar .action_items span.action_item > .dropdown_menu > a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 35, /var/lib/gems/2.3.0/bundler/gems/activeadmin-4f494073c6c0/app/assets/stylesheets/active_admin/_base.scss */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 72%;
+  background: #FFF;
+  color: #323537;
+}
+/*
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+
+
+body
+{
+	/* Font */
+	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+	font-size: 12px;
+
+	/* Text color */
+	color: #333;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+
+	margin: 20px;
+}
+
+.cke_editable
+{
+	font-size: 13px;
+	line-height: 1.6;
+
+	/* Fix for missing scrollbars with RTL texts. (#10488) */
+	word-wrap: break-word;
+}
+
+blockquote
+{
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.cke_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}
+
+a
+{
+	color: #0782C1;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+hr
+{
+	border: 0px;
+	border-top: 1px solid #ccc;
+}
+
+img.right
+{
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+img.left
+{
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+.marker
+{
+	background-color: Yellow;
+}
+
+span[lang]
+{
+	font-style: italic;
+}
+
+figure
+{
+	text-align: center;
+	border: solid 1px #ccc;
+	border-radius: 2px;
+	background: rgba(0,0,0,0.05);
+	padding: 10px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+
+figure > figcaption
+{
+	text-align: center;
+	display: block; /* For IE8 */
+}
+
+a > img {
+	padding: 1px;
+	margin: 1px;
+	border: none;
+	outline: 1px solid #0782C1;
+}
+
+/* Widget Styles */
+.code-featured
+{
+	border: 5px solid red;
+}
+
+.math-featured
+{
+	padding: 20px;
+	box-shadow: 0 0 2px rgba(200, 0, 0, 1);
+	background-color: rgba(255, 0, 0, 0.05);
+	margin: 10px;
+}
+
+.image-clean
+{
+	border: 0;
+	background: none;
+	padding: 0;
+}
+
+.image-clean > figcaption
+{
+	font-size: .9em;
+	text-align: right;
+}
+
+.image-grayscale
+{
+	background-color: white;
+	color: #666;
+}
+
+.image-grayscale img, img.image-grayscale
+{
+	filter: grayscale(100%);
+}
+
+.embed-240p
+{
+	max-width: 426px;
+	max-height: 240px;
+	margin:0 auto;
+}
+
+.embed-360p
+{
+	max-width: 640px;
+	max-height: 360px;
+	margin:0 auto;
+}
+
+.embed-480p
+{
+	max-width: 854px;
+	max-height: 480px;
+	margin:0 auto;
+}
+
+.embed-720p
+{
+	max-width: 1280px;
+	max-height: 720px;
+	margin:0 auto;
+}
+
+.embed-1080p
+{
+	max-width: 1920px;
+	max-height: 1080px;
+	margin:0 auto;
+}
+
+
+/* General */
+
+* { 
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {color: #3871CB}
+
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix:before, .clearfix:after, .wrap:before, .wrap:after {
+    content: " ";
+    display: table;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #757575;
+    word-wrap: break-word;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+
+.wrap {
+    width:  960px;
+    margin: 0 auto;
+}
+
+.img-response {
+    display: block;
+    max-width: 100%;
+}
+
+.padd-15 {
+    padding: 15px;
+}
+
+.padd-20 {
+    padding: 20px;
+}
+
+.whitebox {
+    background: #fff;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.aquabox {
+    background: #00FFFF;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.graybox {
+    background: #4B0082;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.blackbox {
+    background: #000000;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.whitebox h1 {
+    display: inline-block;
+    width: 100%;
+    /* text-align: center; */
+    position: relative;
+    font-size: 18px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    margin: 0 0 25px;
+}
+.whitebox h1:after {
+    content: '';
+    position: absolute;
+    left: 0.5%;
+    right: 75%;
+    border-bottom: 3px solid #E04343;
+    bottom: -2px;
+}
+.whitebox h1 .post-date {
+    float: right;
+    font-size: 12px;
+    margin-top: 7px;
+}
+/* Header */
+header {
+    width: 100%;
+    background: #182E46;
+    border-radius: 10px 0px 10px 10px;
+    position:  relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+header .logo {
+    float: left;
+    width: 175px;
+    display: block;
+}
+
+
+/* Top Div */
+.topnav-wrap {
+    background: #bbb;
+    background-image: -webkit-linear-gradient(top, #fff 0%, #bbb 100%);
+    background-image: -moz-linear-gradient(top, #fff 0%, #bbb 100%);
+    background-image: linear-gradient(top, #fff 0%, #bbb 100%);
+    position: absolute;
+    border-radius:10px 10px 0 0;
+    right: 25px;
+    bottom: 0px;
+}
+
+.main-nav {
+    float: left;
+    width:  100%;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid transparent;
+}
+
+
+.main-nav ul li a:hover {    
+/*    box-shadow: inset 0px 1px 10px rgba(35,35,35,0.5);*/
+    background: #fff;
+    border-top: 2px solid #c91b2a;
+}
+.main-nav ul li:first-child a:hover {
+    border-radius: 10px 0 0 0;
+}
+.main-nav ul li:last-child a:hover {
+    border-radius: 0 10px 0 0;
+}
+
+
+/* Banner */
+.banner {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 300px;
+    margin: 0 0 15px;
+}
+
+.job-main{
+    overflow: hidden;
+    width: 100%;
+/*    min-height: 120px;*/
+    padding: 10px  15px;
+	margin-bottom:10px;
+}
+/* Columns */
+.home-col-left {
+    float: left;
+    width:  470px;
+    margin-right: 8px
+}
+
+.home-col-right {
+    float: right;
+    width:  470px;
+    margin-left: 8px
+}
+
+.col-fullwidth {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.col-left {
+    float: left;
+    width:  70%;
+    margin-right: 2%
+}
+
+.col-right {
+    float: right;
+    width: 27%;
+}
+
+.col-half-left {
+    float: left;
+    width: 45%;
+    margin-right: 2%
+}
+.col-half-right {
+    float: right;
+    width: 45%;
+    margin-right: 2%
+}
+
+.col-search-left {float: left; width: 40%; margin-right: 2%;}
+.col-search-right {float: left; width: 40%;}
+
+.hr-spacer {float: left; width: 100%; border-bottom: 1px dashed #d3d3d3; margin: 10px 0;}
+
+.fjobsbox {
+    float: left;
+    overflow-y: auto;
+    height: 200px;    
+    width: 100%;
+}
+
+.fjobsbox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fjobsbox ul li {
+display: block;
+border-bottom: 1px solid #d3d3d3;
+font-size: 13px;
+}
+
+.fjobsbox ul li a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.fjobsbox ul li a:hover {
+    color: #c91b2a;
+}
+
+.fjobsbox ul li img {width: 12px; height: 12px;}
+
+/* Typography */
+p {line-height: 22px; font-size: 13px; margin: 5px 0;}
+.head {font-size: 30px; font-weight: 300; margin-bottom: 15px;}
+.sub-head {font-size: 24px; font-weight: 300; margin-bottom: 0px;}
+.mini-head {font-size: 16px; font-size: 300; margin-bottom: 10px;}
+a.readmore {font-size: 13px; color: #333;}
+a:hover.readmore {text-decoration: none; color: #000;}
+
+/* Job Box */
+.job-box {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.jb-content {
+    border-bottom: dashed 1px #ccc;
+    margin-bottom: 8px;
+    padding-bottom: 11px;
+    display: inline-block; 
+    width: 100%;
+}
+.jb-content:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.jb-title {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.jb-title a {
+    color:  #b50f1d !important;
+    text-decoration: none;
+}
+
+.jb-title a:hover {
+    color: #42b50f !important;
+}
+
+.jb-loc {
+    float: left;
+    font-weight: bold;
+    font-size: 12px;
+}
+.jb-desc {
+    float: left;
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+}
+.jb-desc p {
+    line-height: 22px;
+}
+a.jb-footer {  
+    float: left;
+    clear: both;
+    padding: 1px 5px;
+    background: #f3f3f3;
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+a:hover.jb-footer {  
+    background: #333;
+    color: #fff;
+}
+
+.jobs-by {float:left; width: 100%; margin: 15px 0}
+
+.jb-list {
+    float: left;
+    width: 100%;
+    white-space: normal;
+    font-size: 14px;
+}
+    
+.jb-list .tag {
+	float: left;
+	background: #E04343;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0 10px 18px;
+	padding: 2px 10px 1px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	position: relative;
+	transition: all .25s linear;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	white-space: nowrap;
+	line-height: 21px;
+}
+
+.jb-list .tag:before {
+	content: "";
+	border-style: solid;
+	border-color: transparent #E04343 transparent transparent;
+	border-width: 12px 13px 12px 0;
+	position: absolute;
+	left: -13px;
+	top: 0;
+	transition: all .25s linear;
+}
+
+
+.jb-list .tag:after {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 1px 1px #737373 inset;
+    content: "";
+    height: 5px;
+    left: -1px;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+}
+.jb-list .tag:hover {background-color: #a31e1e;}
+.jb-list .tag:hover:before  {border-color: transparent #a31e1e transparent transparent;}
+
+
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom-width: 0;
+}
+/* collapse vertical borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-last-child,
+.ui-li-static.ui-collapsible.ui-collapsible-collapsed > .ui-collapsible-heading > a.ui-btn {
+    border-bottom-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn {
+    border-top-width: 0;
+}
+/* Remove right borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > .ui-li-static,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-right-width: 0;
+}
+/* Remove left borders */
+/* Here, we need class ui-listview-outer to identify the outermost listview */
+.ui-listview-outer > .ui-li-static.ui-collapsible .ui-li-static.ui-collapsible.ui-collapsible,
+.ui-listview-outer > .ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-left-width: 0;
+}
+.ui-page-theme-a a {
+    color: #1C5285;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Footer */
+footer {
+    background: #182E46;
+    float: left;
+    width: 100%;
+    color: #fff;
+    border-radius:10px 10px 0 0 ;
+}
+.foot-left, .foot-center, .foot-right {float: left; width: 300px;}
+.foot-center {margin: 0 15px;}
+footer h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer .foot-links {list-style: none; margin: 0; padding: 0; font-size: 14px;}
+footer .foot-links li {margin-bottom: 8px;}
+footer .foot-links a {color: #6495ED; text-decoration: none;}
+
+footer a.readmore {color: #d3d3d3;}
+footer a:hover.readmore {color: #ccc;}
+
+.credit {
+    float: left;
+    width: 100%;
+    margin-bottom:  15px;
+    background: #294769;
+    color: #799bc1;
+    font-size: 12px;    
+    border-radius: 0 0 10px 10px ;
+    box-shadow: inset 0 3px 3px rgba(0,0,0,0.5);
+}
+
+.credit .copyright {
+    float: left;
+    margin: 10px 10px 0 10px;
+}
+
+.credit .designed {
+    float: right;
+    margin: 10px 10px 10px 0;
+}
+
+.credit .designed a {color: #999;}
+
+/* breadcrumb */
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+.breadcrumb > .active {
+    color: #999;
+}
+.breadcrumb > li a {
+    color: #1C5285;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.flexy-menu {margin: 10px 0 0 0!important;}
+.flexy-menu {width: 100%;margin:0;padding: 0;position:relative;float:left; list-style: none;background: #f7f7f7;}
+.flexy-menu li {font-size:13px;margin:0;padding:0;line-height: 20px;position:relative;border-bottom: dotted 1px #ccc;}
+.flexy-menu > li > a{padding:10px 22px;color:#333;text-decoration:none;display:block;text-transform:uppercase;-webkit-transition:color 0.2s linear, background 0.2s linear;-moz-transition:color 0.2s linear, background 0.2s linear;-o-transition:color 0.2s linear, background 0.2s linear;transition:color 0.2s linear, background 0.2s linear;}
+.flexy-menu li:hover > a,
+.flexy-menu li.active a {background: #555;color: #fff;}
+.flexy-menu li.right{float: right;}
+.flexy-menu ul, .flexy-menu ul li ul{list-style: none;margin: 0;padding: 0;display: none;position: absolute;z-index: 99999;width: 132px;background: #333333;box-shadow: 0 1px 1px rgba(0,0,0,0.3);}
+.flexy-menu ul li ul li {border-bottom: 1px dotted #fff;}
+.flexy-menu ul{top: 60px;left: 0;}
+.flexy-menu ul li ul{top: 0;left: 100%;}
+.flexy-menu ul li {clear:both;width:100%;border: none;font-size:12px;}
+.flexy-menu ul li a {padding:10px 20px;width:100%;color:#dedede;font-size:13px;text-decoration:none;display:inline-block;float:left;clear:both;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-transition:color 0.2s linear, background 0.2s linear;-moz-transition:color 0.2s linear, background 0.2s linear;-o-transition:color 0.2s linear, background 0.2s linear;transition:color 0.2s linear, background 0.2s linear;}
+.flexy-menu > li .indicator{position: absolute;color: #dedede;top: 20px;right: 8px;font-size: 17px;}
+.flexy-menu ul > li .indicator{top: 10px;right: 8px;}
+.thin > li > a{padding: 10px 22px;}
+.thin ul{top: 40px;}
+.thin > li .indicator{top: 10px;}
+.thick > li > a{padding: 40px 22px;}
+.thick ul{top: 100px;}
+.thick > li .indicator{top: 40px;}
+.flexy-menu i{line-height: 20px !important;margin-right: 6px;font-size: 18px;float: left;}
+.flexy-menu > li.showhide{display: none;width: 100%;height: 50px;cursor: pointer;color:#dedede;border-bottom: solid 1px rgba(0, 0, 0, 0.1);background: #333333;}
+.flexy-menu > li.showhide span.title{margin: 16px 0 0 25px;float: left;}
+.flexy-menu > li.showhide span.icon{margin: 17px 20px;float: right;}
+.flexy-menu > li.showhide .icon em{margin-bottom: 3px;display: block;width: 20px;height: 2px;background: #ccc;}
+.orange li:hover > a, .orange li.active a{background: #E04343;color: #fff!important;}
+
+.hr-spacer {
+    float: left;
+    width: 100%;
+    margin: 5px 0 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.submit-btn {float: left; margin-left: 25px;}
+.ui-btn {font-size: 14px !important;}
+
+
+/* Featured Jobs */
+.featured-jobs {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+.featured-jobs h2 {
+color: #0c4284;
+font-size: 1.20em;
+float: left;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.featured-jobs .more a {
+    float: right;
+    clear: both;
+    padding: 1px 5px;
+    background: #f3f3f3;
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+.featured-jobs .more a:hover {
+    background: #333;
+    color: #fff;
+}
+.featured-jobs .hfj-post {float:left; width: 100%;}
+.featured-jobs .hfj-post a {font-size: 14px; font-weight: 600; color: #b50f1d !important; text-decoration: none;}
+.featured-jobs .hfj-post a:hover {color:#42b50f !important}
+.featured-jobs .hfj-post > .location {float: right; font-size: 12px;}
+.searchbox h2 {margin: 0 0 15px; font-size: 16px;}
+.featured-jobs .job-desc {float: left; width: 100%; line-height: 18px; font-size: 13px; font-weight: 300; clear: both;}
+.featured-jobs .job-desc ul {list-style: circle; margin: 0; padding-left: 25px;}
+.featured-jobs .job-desc ul li {margin-bottom: 5px;}
+
+
+
+label {
+    display: block;
+    margin: 0 0 .4em;
+    font-weight: 400;
+    font-size: 14px;
+}
+input[type="text"], input[type="email"], select, textarea {
+    padding: .4em;
+    line-height: 1.4em;
+    display: block;
+    width: 100%;    
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    
+    margin: 0 0 10px;
+    min-height: 2.2em;
+    text-align: left;
+    border: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+    
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	padding: 5px 8px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c1c2ba);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#c1c2ba));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #a3a3a3;
+	-moz-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.2),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.2),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 2px rgba(000,000,000,0.2),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+.acchead {
+    float: left;
+    width: 100%;
+    margin: 0px 0 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.accbox {
+    float:left;
+    width: 100%;
+    margin-bottom: 15px !important;
+}
+.accbox h3 {
+    font-size: 14px !important;
+}
+.accbox .ui-accordion-content {
+    overflow: inherit;
+    height: auto !important;
+}
+
+.ui-state-active {color: #182E46 !important;}
+
+
+
+
+.seperator {
+    border-right: 1px solid #fff;
+}
+
+/* Styles specific to this particular page */
+.scroll-pane {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane
+{
+    position: absolute;
+}
+
+.jspVerticalBar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    background: red;
+}
+
+.jspHorizontalBar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: #777;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.jspCap
+{
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+    float: left;
+}
+
+.jspTrack
+{
+    background: #777;
+    position: relative;
+}
+
+.jspDrag
+{
+    background: #aaa;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+    float: left;
+    height: 100%;
+}
+
+.jspArrow
+{
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 7px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 7px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+    outline: none;
+}
+
+.jspCorner
+{
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+    margin: 0 -3px 0 0;
+}
+
+/* Pure CSS */
+
+.code {padding: 1em; margin: 10px 0; border: 1px solid #eee; overflow-x: auto; -webkit-overflow-scrolling: touch; background: rgb(250, 250, 250);}
+.red {color: #F00;}
+
+.pure-table {border-collapse:collapse;border-spacing:0;empty-cells:show;border:1px solid #cbcbcb}.pure-table caption{color:#000;font:italic 85%/1 arial,sans-serif;padding:1em 0;text-align:center}.pure-table th{font-size: 12px !important;}.pure-table td,.pure-table th{border-left:1px solid #cbcbcb;border-width:0 0 0 1px;font-size:inherit;margin:0;overflow:visible;padding:3px 12px; vertical-align: middle !important;}.pure-table td:first-child,.pure-table th:first-child{border-left-width:0}.pure-table thead{background:#333;color:#fff;text-align:left;vertical-align:bottom}.pure-table td{background-color:transparent; font-size: 13px;}.pure-table-odd td{background-color:#f2f2f2}.pure-table-striped tr:nth-child(2n-1) td{background-color:#f2f2f2}.pure-table-bordered td{border-bottom:1px solid #cbcbcb}.pure-table-bordered tbody>tr:last-child td,.pure-table-horizontal tbody>tr:last-child td{border-bottom-width:0}.pure-table-horizontal td,.pure-table-horizontal th{border-width:0 0 1px;border-bottom:1px solid #cbcbcb}.pure-table-horizontal tbody>tr:last-child td{border-bottom-width:0}
+
+.pure-table td {padding:5px 12px !important; vertical-align: middle !important;}
+.pure-table td:nth-child(1), .pure-table td:nth-child(3), .pure-table td:nth-child(5) {background: #F9F9F9;}
+.pure-table td:nth-child(1) {font-size: 14px;}
+.pure-table td a {color: #1d52b7; text-decoration: none;}
+
+.pure-form input[type=text],.pure-form input[type=password],.pure-form input[type=email],.pure-form input[type=url],.pure-form input[type=date],.pure-form input[type=month],.pure-form input[type=time],.pure-form input[type=datetime],.pure-form input[type=datetime-local],.pure-form input[type=week],.pure-form input[type=number],.pure-form input[type=search],.pure-form input[type=tel],.pure-form input[type=color],.pure-form select,.pure-form textarea{padding:.5em .6em;display:inline-block;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.pure-form input:not([type]){padding:.5em .6em;display:inline-block;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.pure-form input[type=color]{padding:.2em .5em}.pure-form input[type=text]:focus,.pure-form input[type=password]:focus,.pure-form input[type=email]:focus,.pure-form input[type=url]:focus,.pure-form input[type=date]:focus,.pure-form input[type=month]:focus,.pure-form input[type=time]:focus,.pure-form input[type=datetime]:focus,.pure-form input[type=datetime-local]:focus,.pure-form input[type=week]:focus,.pure-form input[type=number]:focus,.pure-form input[type=search]:focus,.pure-form input[type=tel]:focus,.pure-form input[type=color]:focus,.pure-form select:focus,.pure-form textarea:focus{outline:0;outline:thin dotted \9;border-color:#129FEA}.pure-form input:not([type]):focus{outline:0;outline:thin dotted \9;border-color:#129FEA}.pure-form input[type=file]:focus,.pure-form input[type=radio]:focus,.pure-form input[type=checkbox]:focus{outline:thin dotted #333;outline:1px auto #129FEA}.pure-form .pure-checkbox,.pure-form .pure-radio{margin:.5em 0;display:block}.pure-form input[type=text][disabled],.pure-form input[type=password][disabled],.pure-form input[type=email][disabled],.pure-form input[type=url][disabled],.pure-form input[type=date][disabled],.pure-form input[type=month][disabled],.pure-form input[type=time][disabled],.pure-form input[type=datetime][disabled],.pure-form input[type=datetime-local][disabled],.pure-form input[type=week][disabled],.pure-form input[type=number][disabled],.pure-form input[type=search][disabled],.pure-form input[type=tel][disabled],.pure-form input[type=color][disabled],.pure-form select[disabled],.pure-form textarea[disabled]{cursor:not-allowed;background-color:#eaeded;color:#cad2d3}.pure-form input:not([type])[disabled]{cursor:not-allowed;background-color:#eaeded;color:#cad2d3}.pure-form input[readonly],.pure-form select[readonly],.pure-form textarea[readonly]{background:#eee;color:#777;border-color:#ccc}.pure-form input:focus:invalid,.pure-form textarea:focus:invalid,.pure-form select:focus:invalid{color:#b94a48;border-color:#ee5f5b}.pure-form input:focus:invalid:focus,.pure-form textarea:focus:invalid:focus,.pure-form select:focus:invalid:focus{border-color:#e9322d}.pure-form input[type=file]:focus:invalid:focus,.pure-form input[type=radio]:focus:invalid:focus,.pure-form input[type=checkbox]:focus:invalid:focus{outline-color:#e9322d}.pure-form select{border:1px solid #ccc;background-color:#fff}.pure-form select[multiple]{height:auto}.pure-form label{margin:.5em 0 .2em}.pure-form fieldset{margin:0;padding:.35em 0 .75em;border:0}.pure-form legend{display:block;width:100%;padding:.3em 0;margin-bottom:.3em;color:#333;border-bottom:1px solid #e5e5e5}.pure-form-stacked input[type=text],.pure-form-stacked input[type=password],.pure-form-stacked input[type=email],.pure-form-stacked input[type=url],.pure-form-stacked input[type=date],.pure-form-stacked input[type=month],.pure-form-stacked input[type=time],.pure-form-stacked input[type=datetime],.pure-form-stacked input[type=datetime-local],.pure-form-stacked input[type=week],.pure-form-stacked input[type=number],.pure-form-stacked input[type=search],.pure-form-stacked input[type=tel],.pure-form-stacked input[type=color],.pure-form-stacked select,.pure-form-stacked label,.pure-form-stacked textarea{display:block;margin:.25em 0}.pure-form-stacked input:not([type]){display:block;margin:.25em 0}.pure-form-aligned input,.pure-form-aligned textarea,.pure-form-aligned select,.pure-form-aligned .pure-help-inline,.pure-form-message-inline{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}.pure-form-aligned textarea{vertical-align:top}.pure-form-aligned .pure-control-group{margin-bottom:.5em}.pure-form-aligned .pure-control-group label{text-align:right;display:inline-block;vertical-align:middle;width:10em;margin:0 1em 0 0}.pure-form-aligned .pure-controls{margin:1.5em 0 0 10em}.pure-form input.pure-input-rounded,.pure-form .pure-input-rounded{border-radius:2em;padding:.5em 1em}.pure-form .pure-group fieldset{margin-bottom:10px}.pure-form .pure-group input{display:block;padding:10px;margin:0;border-radius:0;position:relative;top:-1px}.pure-form .pure-group input:focus{z-index:2}.pure-form .pure-group input:first-child{top:1px;border-radius:4px 4px 0 0}.pure-form .pure-group input:last-child{top:-2px;border-radius:0 0 4px 4px}.pure-form .pure-group button{margin:.35em 0}.pure-form .pure-input-1{width:100%}.pure-form .pure-input-2-3{width:66%}.pure-form .pure-input-1-2{width:50%}.pure-form .pure-input-1-3{width:33%}.pure-form .pure-input-1-4{width:25%}.pure-form .pure-help-inline,.pure-form-message-inline{display:inline-block;padding-left:.3em;color:#666;vertical-align:middle;font-size:.875em}.pure-form-message{display:block;color:#666;font-size:.875em}
+
+.pure-button{display:inline-block;*display:inline;zoom:1;line-height:normal;white-space:nowrap;vertical-align:baseline;text-align:center;cursor:pointer;-webkit-user-drag:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.pure-button::-moz-focus-inner{padding:0;border:0}.pure-button{font-family:inherit;font-size:100%;*font-size:90%;*overflow:visible;padding:.5em 1em;color:#444;color:rgba(0,0,0,.8);*color:#444;border:1px solid #999;border:0 rgba(0,0,0,0);background-color:#E6E6E6;text-decoration:none;border-radius:2px}.pure-button-hover,.pure-button:hover,.pure-button:focus{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);background-image:-webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));background-image:-webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:-moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));background-image:-o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))}.pure-button:focus{outline:0}.pure-button-active,.pure-button:active{box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset}.pure-button[disabled],.pure-button-disabled,.pure-button-disabled:hover,.pure-button-disabled:focus,.pure-button-disabled:active{border:0;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);filter:alpha(opacity=40);-khtml-opacity:.4;-moz-opacity:.4;opacity:.4;cursor:not-allowed;box-shadow:none}.pure-button-hidden{display:none}.pure-button::-moz-focus-inner{padding:0;border:0}.pure-button-primary,.pure-button-selected,a.pure-button-primary,a.pure-button-selected{background-color:#0078e7;color:#fff}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {color: white;border-radius: 4px;text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);}
+.button-success {background: rgb(28, 184, 65); /* this is a green */}
+.button-error {background: rgb(202, 60, 60); /* this is a maroon */}
+.button-warning {background: rgb(223, 117, 20); /* this is an orange */}
+.button-secondary {background: rgb(66, 184, 221); /* this is a light blue */}
+
+.pure-table a {color: #4384d6 !important;}
+.pure-table a:hover {color: #be2929 !important; text-decoration: none;}
+
+.sharethis {    
+    float: left;
+    width:100%;
+    position: relative;
+    padding: 40px 15px 15px;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px 0;
+    
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-width: 1px;
+}
+
+.sharethis:after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Share This Job On";
+}
+
+.ext-courses-box {
+    width: 100%;
+}
+
+.ext-courses-header {
+    padding: 10px;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background: #ed1d24;
+    border-bottom: 0.25em solid #c4181e;
+}
+.ext-courses-header > h2 {
+    line-height: 25px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px rgba(0,0,0,0.15);
+}
+
+.ext-courses {
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.ext-courses > h3 {
+    line-height: 25px;
+    font-size: 11px;
+    color: #888;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+}
+
+.ext-courses a.label {
+    padding: 10px;
+    display: block;
+    color: #505050;
+    text-shadow: 0 1px rgba(255,255,255,0.5);
+    background: #eaefef;
+    border-bottom: 0.25em solid #D8D8D8;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.ext-courses a:hover.label {
+    color: white;
+    background: #20aae5;
+    text-shadow: 0 1px rgba(0,0,0,0.15);
+    background: #20aae5;
+    border-bottom: 0.25em solid #1894ca;
+}
+
+.ext-courses a:active.label {
+    position: relative;
+    top: 1px;
+    border-bottom: 0.2em solid #1894ca;
+    margin-bottom: 9.15px;
+}
+/* line 1, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/ubuntu/Ask4Referral/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+/* General */
+
+* { 
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {color: #3871CB}
+
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix:before, .clearfix:after, .wrap:before, .wrap:after {
+    content: " ";
+    display: table;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #757575;
+    word-wrap: break-word;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+
+.wrap {
+    width:  960px;
+    margin: 0 auto;
+}
+
+.img-response {
+    display: block;
+    max-width: 100%;
+}
+
+.padd-15 {
+    padding: 15px;
+}
+
+.padd-20 {
+    padding: 20px;
+}
+
+.padd-25 {
+    padding: 35px;
+}
+
+.whitebox {
+    background: #fff;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.aquabox {
+    background: #00FFFF;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.graybox {
+    background: #4B0082;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.blackbox {
+    background: #000000;
+    box-shadow: 0px 1px 1px rgba(34, 34, 34, 0.2);
+}
+
+.whitebox h1 {
+    display: inline-block;
+    width: 100%;
+    /* text-align: center; */
+    position: relative;
+    font-size: 18px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    margin: 0 0 25px;
+}
+.whitebox h1:after {
+    content: '';
+    position: absolute;
+    left: 0.5%;
+    right: 75%;
+    border-bottom: 3px solid #E04343;
+    bottom: -2px;
+}
+.whitebox h1 .post-date {
+    float: right;
+    font-size: 12px;
+    margin-top: 7px;
+}
+/* Header */
+header {
+    width: 100%;
+    background: #182E46;
+    border-radius: 10px 0px 10px 10px;
+    position:  relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+header .logo {
+    float: left;
+    width: 175px;
+    display: block;
+}
+
+
+/* Top Div */
+.topnav-wrap {
+    background: #bbb;
+    background-image: -webkit-linear-gradient(top, #fff 0%, #bbb 100%);
+    background-image: -moz-linear-gradient(top, #fff 0%, #bbb 100%);
+    background-image: linear-gradient(top, #fff 0%, #bbb 100%);
+    position: absolute;
+    border-radius:10px 10px 0 0;
+    right: 25px;
+    bottom: 0px;
+}
+
+.main-nav {
+    float: left;
+    width:  100%;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid transparent;
+}
+
+
+.main-nav ul li a:hover {    
+/*    box-shadow: inset 0px 1px 10px rgba(35,35,35,0.5);*/
+    background: #fff;
+    border-top: 2px solid #c91b2a;
+}
+.main-nav ul li:first-child a:hover {
+    border-radius: 10px 0 0 0;
+}
+.main-nav ul li:last-child a:hover {
+    border-radius: 0 10px 0 0;
+}
+
+
+/* Banner */
+.banner {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 300px;
+    margin: 0 0 15px;
+}
+
+.job-main{
+    overflow: hidden;
+    width: 100%;
+/*    min-height: 120px;*/
+    padding: 10px  15px;
+	margin-bottom:10px;
+}
+/* Columns */
+.home-col-left {
+    float: left;
+    width:  470px;
+    margin-right: 8px
+}
+
+.home-col-right {
+    float: right;
+    width:  470px;
+    margin-left: 8px
+}
+
+.col-fullwidth {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.col-left {
+    float: left;
+    width:  70%;
+    margin-right: 2%
+}
+
+.col-right {
+    float: right;
+    width: 27%;
+	margin-right: 1%
+}
+
+
+
+.col-half-left {
+    float: left;
+    width: 47%;
+	margin-left: 0.5%
+    
+}
+.col-half-right {
+    float: right;
+    width: 47%;
+	margin-right: o.5%
+    
+}
+
+.text-field {
+    float: left;
+    width: 100%;
+    
+}
+
+
+.col-search-left {float: left; width: 40%; margin-right: 2%;}
+.col-search-right {float: left; width: 40%;}
+
+.hr-spacer {float: left; width: 100%; border-bottom: 1px dashed #d3d3d3; margin: 10px 0;}
+
+.fjobsbox {
+    float: left;
+    overflow-y: auto;
+    height: 200px;    
+    width: 100%;
+}
+
+.fjobsbox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fjobsbox ul li {
+display: block;
+border-bottom: 1px solid #d3d3d3;
+font-size: 13px;
+}
+
+.fjobsbox ul li a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.fjobsbox ul li a:hover {
+    color: #c91b2a;
+}
+
+.fjobsbox ul li img {width: 12px; height: 12px;}
+
+/* Typography */
+p {line-height: 22px; font-size: 13px; margin: 5px 0;}
+.head {font-size: 30px; font-weight: 300; margin-bottom: 15px;}
+.sub-head {font-size: 24px; font-weight: 300; margin-bottom: 0px;}
+.mini-head {font-size: 16px; font-size: 300; margin-bottom: 10px;}
+a.readmore {font-size: 13px; color: #333;}
+a:hover.readmore {text-decoration: none; color: #000;}
+
+/* Job Box */
+.job-box {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.jb-content {
+    border-bottom: dashed 1px #ccc;
+    margin-bottom: 8px;
+    padding-bottom: 11px;
+    display: inline-block; 
+    width: 100%;
+}
+.jb-content:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.jb-title {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.jb-title a {
+    color:  #b50f1d !important;
+    text-decoration: none;
+}
+
+.jb-title a:hover {
+    color: #42b50f !important;
+}
+
+.jb-loc {
+    float: left;
+    font-weight: bold;
+    font-size: 12px;
+}
+.jb-desc {
+    float: left;
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+}
+.jb-desc p {
+    line-height: 22px;
+}
+a.jb-footer {  
+    float: left;
+    clear: both;
+    padding: 1px 5px;
+    background: #f3f3f3;
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+a:hover.jb-footer {  
+    background: #333;
+    color: #fff;
+}
+
+.jobs-by {float:left; width: 100%; margin: 15px 0}
+
+.jb-list {
+    float: left;
+    width: 100%;
+    white-space: normal;
+    font-size: 14px;
+}
+    
+.jb-list .tag {
+	float: left;
+	background: #E04343;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0 10px 18px;
+	padding: 2px 10px 1px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	position: relative;
+	transition: all .25s linear;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	white-space: nowrap;
+	line-height: 21px;
+}
+
+.jb-list .tag:before {
+	content: "";
+	border-style: solid;
+	border-color: transparent #E04343 transparent transparent;
+	border-width: 12px 13px 12px 0;
+	position: absolute;
+	left: -13px;
+	top: 0;
+	transition: all .25s linear;
+}
+
+
+.jb-list .tag:after {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 1px 1px #737373 inset;
+    content: "";
+    height: 5px;
+    left: -1px;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+}
+.jb-list .tag:hover {background-color: #a31e1e;}
+.jb-list .tag:hover:before  {border-color: transparent #a31e1e transparent transparent;}
+
+
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom-width: 0;
+}
+/* collapse vertical borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-last-child,
+.ui-li-static.ui-collapsible.ui-collapsible-collapsed > .ui-collapsible-heading > a.ui-btn {
+    border-bottom-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn {
+    border-top-width: 0;
+}
+/* Remove right borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > .ui-li-static,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-right-width: 0;
+}
+/* Remove left borders */
+/* Here, we need class ui-listview-outer to identify the outermost listview */
+.ui-listview-outer > .ui-li-static.ui-collapsible .ui-li-static.ui-collapsible.ui-collapsible,
+.ui-listview-outer > .ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-left-width: 0;
+}
+.ui-page-theme-a a {
+    color: #1C5285;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Footer */
+footer {
+    background: #182E46;
+    float: left;
+    width: 100%;
+    color: #fff;
+    border-radius:10px 10px 0 0 ;
+}
+.foot-left, .foot-center, .foot-right {float: left; width: 300px;}
+.foot-center {margin: 0 15px;}
+footer h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer .foot-links {list-style: none; margin: 0; padding: 0; font-size: 14px;}
+footer .foot-links li {margin-bottom: 8px;}
+footer .foot-links a {color: #6495ED; text-decoration: none;}
+
+footer a.readmore {color: #d3d3d3;}
+footer a:hover.readmore {color: #ccc;}
+
+.credit {
+    float: left;
+    width: 100%;
+    margin-bottom:  15px;
+    background: #294769;
+    color: #799bc1;
+    font-size: 12px;    
+    border-radius: 0 0 10px 10px ;
+    box-shadow: inset 0 3px 3px rgba(0,0,0,0.5);
+}
+
+.credit .copyright {
+    float: left;
+    margin: 10px 10px 0 10px;
+}
+
+.credit .designed {
+    float: right;
+    margin: 10px 10px 10px 0;
+}
+
+.credit .designed a {color: #999;}
+
+/* breadcrumb */
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+.breadcrumb > .active {
+    color: #999;
+}
+.breadcrumb > li a {
+    color: #1C5285;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.flexy-menu {margin: 10px 0 0 0!important;}
+.flexy-menu {width: 100%;margin:0;padding: 0;position:relative;float:left; list-style: none;background: #f7f7f7;}
+.flexy-menu li {font-size:13px;margin:0;padding:0;line-height: 20px;position:relative;border-bottom: dotted 1px #ccc;}
+.flexy-menu > li > a{padding:10px 22px;color:#333;text-decoration:none;display:block;text-transform:uppercase;-webkit-transition:color 0.2s linear, background 0.2s linear;-moz-transition:color 0.2s linear, background 0.2s linear;-o-transition:color 0.2s linear, background 0.2s linear;transition:color 0.2s linear, background 0.2s linear;}
+.flexy-menu li:hover > a,
+.flexy-menu li.active a {background: #555;color: #fff;}
+.flexy-menu li.right{float: right;}
+.flexy-menu ul, .flexy-menu ul li ul{list-style: none;margin: 0;padding: 0;display: none;position: absolute;z-index: 99999;width: 132px;background: #333333;box-shadow: 0 1px 1px rgba(0,0,0,0.3);}
+.flexy-menu ul li ul li {border-bottom: 1px dotted #fff;}
+.flexy-menu ul{top: 60px;left: 0;}
+.flexy-menu ul li ul{top: 0;left: 100%;}
+.flexy-menu ul li {clear:both;width:100%;border: none;font-size:12px;}
+.flexy-menu ul li a {padding:10px 20px;width:100%;color:#dedede;font-size:13px;text-decoration:none;display:inline-block;float:left;clear:both;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-transition:color 0.2s linear, background 0.2s linear;-moz-transition:color 0.2s linear, background 0.2s linear;-o-transition:color 0.2s linear, background 0.2s linear;transition:color 0.2s linear, background 0.2s linear;}
+.flexy-menu > li .indicator{position: absolute;color: #dedede;top: 20px;right: 8px;font-size: 17px;}
+.flexy-menu ul > li .indicator{top: 10px;right: 8px;}
+.thin > li > a{padding: 10px 22px;}
+.thin ul{top: 40px;}
+.thin > li .indicator{top: 10px;}
+.thick > li > a{padding: 40px 22px;}
+.thick ul{top: 100px;}
+.thick > li .indicator{top: 40px;}
+.flexy-menu i{line-height: 20px !important;margin-right: 6px;font-size: 18px;float: left;}
+.flexy-menu > li.showhide{display: none;width: 100%;height: 50px;cursor: pointer;color:#dedede;border-bottom: solid 1px rgba(0, 0, 0, 0.1);background: #333333;}
+.flexy-menu > li.showhide span.title{margin: 16px 0 0 25px;float: left;}
+.flexy-menu > li.showhide span.icon{margin: 17px 20px;float: right;}
+.flexy-menu > li.showhide .icon em{margin-bottom: 3px;display: block;width: 20px;height: 2px;background: #ccc;}
+.orange li:hover > a, .orange li.active a{background: #E04343;color: #fff!important;}
+
+.hr-spacer {
+    float: left;
+    width: 90%;
+    margin: 5px 0 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.hr-spacer100 {
+    float: left;
+    width: 100%;
+    margin: 5px 0 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.submit-btn {float: left; margin-left: 25px;}
+.ui-btn {font-size: 14px !important;}
+
+
+/* Featured Jobs */
+.featured-jobs {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+.featured-jobs h2 {
+color: #0c4284;
+font-size: 1.20em;
+float: left;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.featured-jobs .more a {
+    float: right;
+    clear: both;
+    padding: 1px 5px;
+    background: #f3f3f3;
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+.featured-jobs .more a:hover {
+    background: #333;
+    color: #fff;
+}
+.featured-jobs .hfj-post {float:left; width: 100%;}
+.featured-jobs .hfj-post a {font-size: 14px; font-weight: 600; color: #b50f1d !important; text-decoration: none;}
+.featured-jobs .hfj-post a:hover {color:#42b50f !important}
+.featured-jobs .hfj-post > .location {float: right; font-size: 12px;}
+.searchbox h2 {margin: 0 0 15px; font-size: 16px;}
+.featured-jobs .job-desc {float: left; width: 100%; line-height: 18px; font-size: 13px; font-weight: 300; clear: both;}
+.featured-jobs .job-desc ul {list-style: circle; margin: 0; padding-left: 25px;}
+.featured-jobs .job-desc ul li {margin-bottom: 5px;}
+
+
+
+label {
+    display: block;
+    margin: 0 0 .4em;
+    font-weight: 400;
+    font-size: 14px;
+}
+input[type="text"], input[type="email"], select, textarea {
+    padding: .4em;
+    line-height: 1.4em;
+    display: block;
+    width: 100%;    
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    
+    margin: 0 0 10px;
+    min-height: 2.2em;
+    text-align: left;
+    border: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+    
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	padding: 5px 8px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c1c2ba);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#c1c2ba));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #a3a3a3;
+	-moz-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.2),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.2),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 2px rgba(000,000,000,0.2),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+.acchead {
+    float: left;
+    width: 100%;
+    margin: 0px 0 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.accbox {
+    float:left;
+    width: 100%;
+    margin-bottom: 15px !important;
+}
+.accbox h3 {
+    font-size: 14px !important;
+}
+.accbox .ui-accordion-content {
+    overflow: inherit;
+    height: auto !important;
+}
+
+.ui-state-active {color: #182E46 !important;}
+
+
+
+
+.seperator {
+    border-right: 1px solid #fff;
+}
+
+/* Styles specific to this particular page */
+.scroll-pane {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane
+{
+    position: absolute;
+}
+
+.jspVerticalBar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    background: red;
+}
+
+.jspHorizontalBar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: #777;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.jspCap
+{
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+    float: left;
+}
+
+.jspTrack
+{
+    background: #777;
+    position: relative;
+}
+
+.jspDrag
+{
+    background: #aaa;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+    float: left;
+    height: 100%;
+}
+
+.jspArrow
+{
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 7px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 7px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+    outline: none;
+}
+
+.jspCorner
+{
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+    margin: 0 -3px 0 0;
+}
+
+/* Pure CSS */
+
+.code {padding: 1em; margin: 10px 0; border: 1px solid #eee; overflow-x: auto; -webkit-overflow-scrolling: touch; background: rgb(250, 250, 250);}
+.red {color: #F00;}
+
+.pure-table {border-collapse:collapse;border-spacing:0;empty-cells:show;border:1px solid #cbcbcb}.pure-table caption{color:#000;font:italic 85%/1 arial,sans-serif;padding:1em 0;text-align:center}.pure-table th{font-size: 12px !important;}.pure-table td,.pure-table th{border-left:1px solid #cbcbcb;border-width:0 0 0 1px;font-size:inherit;margin:0;overflow:visible;padding:3px 12px; vertical-align: middle !important;}.pure-table td:first-child,.pure-table th:first-child{border-left-width:0}.pure-table thead{background:#333;color:#fff;text-align:left;vertical-align:bottom}.pure-table td{background-color:transparent; font-size: 13px;}.pure-table-odd td{background-color:#f2f2f2}.pure-table-striped tr:nth-child(2n-1) td{background-color:#f2f2f2}.pure-table-bordered td{border-bottom:1px solid #cbcbcb}.pure-table-bordered tbody>tr:last-child td,.pure-table-horizontal tbody>tr:last-child td{border-bottom-width:0}.pure-table-horizontal td,.pure-table-horizontal th{border-width:0 0 1px;border-bottom:1px solid #cbcbcb}.pure-table-horizontal tbody>tr:last-child td{border-bottom-width:0}
+
+.pure-table td {padding:5px 12px !important; vertical-align: middle !important;}
+.pure-table td:nth-child(1), .pure-table td:nth-child(3), .pure-table td:nth-child(5) {background: #F9F9F9;}
+.pure-table td:nth-child(1) {font-size: 14px;}
+.pure-table td a {color: #1d52b7; text-decoration: none;}
+
+.pure-form input[type=text],.pure-form input[type=password],.pure-form input[type=email],.pure-form input[type=url],.pure-form input[type=date],.pure-form input[type=month],.pure-form input[type=time],.pure-form input[type=datetime],.pure-form input[type=datetime-local],.pure-form input[type=week],.pure-form input[type=number],.pure-form input[type=search],.pure-form input[type=tel],.pure-form input[type=color],.pure-form select,.pure-form textarea{padding:.5em .6em;display:inline-block;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.pure-form input:not([type]){padding:.5em .6em;display:inline-block;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.pure-form input[type=color]{padding:.2em .5em}.pure-form input[type=text]:focus,.pure-form input[type=password]:focus,.pure-form input[type=email]:focus,.pure-form input[type=url]:focus,.pure-form input[type=date]:focus,.pure-form input[type=month]:focus,.pure-form input[type=time]:focus,.pure-form input[type=datetime]:focus,.pure-form input[type=datetime-local]:focus,.pure-form input[type=week]:focus,.pure-form input[type=number]:focus,.pure-form input[type=search]:focus,.pure-form input[type=tel]:focus,.pure-form input[type=color]:focus,.pure-form select:focus,.pure-form textarea:focus{outline:0;outline:thin dotted \9;border-color:#129FEA}.pure-form input:not([type]):focus{outline:0;outline:thin dotted \9;border-color:#129FEA}.pure-form input[type=file]:focus,.pure-form input[type=radio]:focus,.pure-form input[type=checkbox]:focus{outline:thin dotted #333;outline:1px auto #129FEA}.pure-form .pure-checkbox,.pure-form .pure-radio{margin:.5em 0;display:block}.pure-form input[type=text][disabled],.pure-form input[type=password][disabled],.pure-form input[type=email][disabled],.pure-form input[type=url][disabled],.pure-form input[type=date][disabled],.pure-form input[type=month][disabled],.pure-form input[type=time][disabled],.pure-form input[type=datetime][disabled],.pure-form input[type=datetime-local][disabled],.pure-form input[type=week][disabled],.pure-form input[type=number][disabled],.pure-form input[type=search][disabled],.pure-form input[type=tel][disabled],.pure-form input[type=color][disabled],.pure-form select[disabled],.pure-form textarea[disabled]{cursor:not-allowed;background-color:#eaeded;color:#cad2d3}.pure-form input:not([type])[disabled]{cursor:not-allowed;background-color:#eaeded;color:#cad2d3}.pure-form input[readonly],.pure-form select[readonly],.pure-form textarea[readonly]{background:#eee;color:#777;border-color:#ccc}.pure-form input:focus:invalid,.pure-form textarea:focus:invalid,.pure-form select:focus:invalid{color:#b94a48;border-color:#ee5f5b}.pure-form input:focus:invalid:focus,.pure-form textarea:focus:invalid:focus,.pure-form select:focus:invalid:focus{border-color:#e9322d}.pure-form input[type=file]:focus:invalid:focus,.pure-form input[type=radio]:focus:invalid:focus,.pure-form input[type=checkbox]:focus:invalid:focus{outline-color:#e9322d}.pure-form select{border:1px solid #ccc;background-color:#fff}.pure-form select[multiple]{height:auto}.pure-form label{margin:.5em 0 .2em}.pure-form fieldset{margin:0;padding:.35em 0 .75em;border:0}.pure-form legend{display:block;width:100%;padding:.3em 0;margin-bottom:.3em;color:#333;border-bottom:1px solid #e5e5e5}.pure-form-stacked input[type=text],.pure-form-stacked input[type=password],.pure-form-stacked input[type=email],.pure-form-stacked input[type=url],.pure-form-stacked input[type=date],.pure-form-stacked input[type=month],.pure-form-stacked input[type=time],.pure-form-stacked input[type=datetime],.pure-form-stacked input[type=datetime-local],.pure-form-stacked input[type=week],.pure-form-stacked input[type=number],.pure-form-stacked input[type=search],.pure-form-stacked input[type=tel],.pure-form-stacked input[type=color],.pure-form-stacked select,.pure-form-stacked label,.pure-form-stacked textarea{display:block;margin:.25em 0}.pure-form-stacked input:not([type]){display:block;margin:.25em 0}.pure-form-aligned input,.pure-form-aligned textarea,.pure-form-aligned select,.pure-form-aligned .pure-help-inline,.pure-form-message-inline{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}.pure-form-aligned textarea{vertical-align:top}.pure-form-aligned .pure-control-group{margin-bottom:.5em}.pure-form-aligned .pure-control-group label{text-align:right;display:inline-block;vertical-align:middle;width:10em;margin:0 1em 0 0}.pure-form-aligned .pure-controls{margin:1.5em 0 0 10em}.pure-form input.pure-input-rounded,.pure-form .pure-input-rounded{border-radius:2em;padding:.5em 1em}.pure-form .pure-group fieldset{margin-bottom:10px}.pure-form .pure-group input{display:block;padding:10px;margin:0;border-radius:0;position:relative;top:-1px}.pure-form .pure-group input:focus{z-index:2}.pure-form .pure-group input:first-child{top:1px;border-radius:4px 4px 0 0}.pure-form .pure-group input:last-child{top:-2px;border-radius:0 0 4px 4px}.pure-form .pure-group button{margin:.35em 0}.pure-form .pure-input-1{width:100%}.pure-form .pure-input-2-3{width:66%}.pure-form .pure-input-1-2{width:50%}.pure-form .pure-input-1-3{width:33%}.pure-form .pure-input-1-4{width:25%}.pure-form .pure-help-inline,.pure-form-message-inline{display:inline-block;padding-left:.3em;color:#666;vertical-align:middle;font-size:.875em}.pure-form-message{display:block;color:#666;font-size:.875em}
+
+.pure-button{display:inline-block;*display:inline;zoom:1;line-height:normal;white-space:nowrap;vertical-align:baseline;text-align:center;cursor:pointer;-webkit-user-drag:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.pure-button::-moz-focus-inner{padding:0;border:0}.pure-button{font-family:inherit;font-size:100%;*font-size:90%;*overflow:visible;padding:.5em 1em;color:#444;color:rgba(0,0,0,.8);*color:#444;border:1px solid #999;border:0 rgba(0,0,0,0);background-color:#E6E6E6;text-decoration:none;border-radius:2px}.pure-button-hover,.pure-button:hover,.pure-button:focus{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);background-image:-webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));background-image:-webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:-moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));background-image:-o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))}.pure-button:focus{outline:0}.pure-button-active,.pure-button:active{box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset}.pure-button[disabled],.pure-button-disabled,.pure-button-disabled:hover,.pure-button-disabled:focus,.pure-button-disabled:active{border:0;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);filter:alpha(opacity=40);-khtml-opacity:.4;-moz-opacity:.4;opacity:.4;cursor:not-allowed;box-shadow:none}.pure-button-hidden{display:none}.pure-button::-moz-focus-inner{padding:0;border:0}.pure-button-primary,.pure-button-selected,a.pure-button-primary,a.pure-button-selected{background-color:#0078e7;color:#fff}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {color: white;border-radius: 4px;text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);}
+.button-success {background: rgb(28, 184, 65); /* this is a green */}
+.button-error {background: rgb(202, 60, 60); /* this is a maroon */}
+.button-warning {background: rgb(223, 117, 20); /* this is an orange */}
+.button-secondary {background: rgb(66, 184, 221); /* this is a light blue */}
+
+.pure-table a {color: #4384d6 !important;}
+.pure-table a:hover {color: #be2929 !important; text-decoration: none;}
+
+.sharethis {    
+    float: left;
+    width:100%;
+    position: relative;
+    padding: 40px 15px 15px;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px 0;
+    
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-width: 1px;
+}
+
+.sharethis:after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Share This Job On";
+}
+
+.ext-courses-box {
+    width: 100%;
+}
+
+.ext-courses-header {
+    padding: 10px;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background: #ed1d24;
+    border-bottom: 0.25em solid #c4181e;
+}
+.ext-courses-header > h2 {
+    line-height: 25px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px rgba(0,0,0,0.15);
+}
+
+.ext-courses {
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.ext-courses > h3 {
+    line-height: 25px;
+    font-size: 11px;
+    color: #888;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+}
+
+.ext-courses a.label {
+    padding: 10px;
+    display: block;
+    color: #505050;
+    text-shadow: 0 1px rgba(255,255,255,0.5);
+    background: #eaefef;
+    border-bottom: 0.25em solid #D8D8D8;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.ext-courses a:hover.label {
+    color: white;
+    background: #20aae5;
+    text-shadow: 0 1px rgba(0,0,0,0.15);
+    background: #20aae5;
+    border-bottom: 0.25em solid #1894ca;
+}
+
+.ext-courses a:active.label {
+    position: relative;
+    top: 1px;
+    border-bottom: 0.2em solid #1894ca;
+    margin-bottom: 9.15px;
+}
+

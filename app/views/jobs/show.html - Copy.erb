@@ -1,0 +1,130 @@
+</br>
+
+<p id="notice"><%= notice %></p>
+
+<div class="col-fullwidth">
+<div class="col-left">
+ <div class="logo">
+                                        <%= link_to new_referral_path(:jobid => @job.id) do %>
+                                                <%= image_tag("logo_11.JPG", :alt => "Ask4Referral") %>
+                                        <% end %>
+        </div>
+<p>
+<h2>Job Description:</h2>
+<p>
+<p>
+ <em>Title:</em>
+  <b><%= @job.title %></b>
+</p>
+
+<p>
+  <em>Company:</em>
+  <b><%= @job.company %></b>
+</p>
+
+<p>
+  <em>Company url:</em>
+  <b><%= @job.comurl %></b>
+</p>
+
+<p>
+  <em>Designation:</em>
+  <b><%= @job.designation %></b>
+</p>
+<!--
+<p>
+  <em>Min Salary:</em>
+  <b><%= @job.minsalary %></b>
+</p>
+
+<p>
+  <em>Max Salary:</em>
+  <b><%= @job.maxsalary %></b>
+</p>
+-->
+<p>
+  <em>Min Experience:</em>
+  <b><%= @job.minexp %></b><i> Years</i>
+</p>
+
+<p>
+  <em>Max Experience:</em>
+  <b><%= @job.maxexp %></b><i> Years</i>
+</p>
+
+<p>
+  <em>Job Category:</em>
+  <b><%= @job.category.name %></b>
+</p>
+
+<p>
+  <em>Location:</em>
+  <b><%= @job.location.name %></b>
+</p>
+
+<p>
+  <em>Job Mode:</em>
+  <b><%= @job.mode.name %></b>
+</p>
+
+<p>
+  <em>Job Type:</em>
+  <b><%= @job.jtype.name %></b>
+</p>
+
+<p>
+  <em>Notice Period:</em>
+  <b><%= @job.nperiod %></b><i> Days</i>
+</p>
+
+<p>
+  <em>Gender:</em>
+  <b><%= @job.gender.name %></b>
+</p>
+
+<p>
+  <em>Contact Person:</em>
+  <b><%= @job.contactperson %></b>
+</p>
+
+<p>
+  <em>Contact Email:</em>
+  <b><%= @job.contactemail %></b>
+</p>
+
+<p>
+  <em>Contact No:</em>
+  <b><%= @job.contactno %></b>
+</p>
+<div class="hr-spacer100"></div></br>
+<p>
+  <em>Description:</em>
+   <%= sanitize(@job.description, :tags => ['strong', 'em', 'a', 'p','u']) %>
+</p></br>
+<div class="hr-spacer100"></div>
+<!--
+<p>
+  <em>Job Id:</em>
+   <%= @job.id %>
+</p>
+-->
+
+</div>
+
+<div class="col-right ">
+<!--					<em>Ads</em>-->
+</div>
+</div>
+
+
+
+	<div class="logo">
+					<%= link_to new_referral_path(:jobid => @job.id) do %>
+						<%= image_tag("logo_11.JPG", :alt => "Ask4Referral") %>
+					<% end %>
+	</div>
+<!--	
+<em>
+<%= link_to "Ask4Refferal", new_referral_path(:jobid => @job.id) %>
+</em> -->
+</br>

@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fname: MyString
+  lname: MyString
+  company: MyString
+  comurl: MyString
+  designation: MyString
+  currsalary: 1
+  expsalary: 1
+  exp: 1
+  location_id: 1
+  mode_id: 1
+  jtype_id: 1
+  nperiod: 1
+  gender_id: 1
+  contactemail: MyString
+  contactno: 1
+  resume: MyString
+  attachment: MyString
+  jobid: 1
+
+two:
+  fname: MyString
+  lname: MyString
+  company: MyString
+  comurl: MyString
+  designation: MyString
+  currsalary: 1
+  expsalary: 1
+  exp: 1
+  location_id: 1
+  mode_id: 1
+  jtype_id: 1
+  nperiod: 1
+  gender_id: 1
+  contactemail: MyString
+  contactno: 1
+  resume: MyString
+  attachment: MyString
+  jobid: 1

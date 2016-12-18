@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Japprovals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @japprovals.each do |japproval| %>
+      <tr>
+        <td><%= japproval.name %></td>
+        <td><%= link_to 'Show', japproval %></td>
+        <td><%= link_to 'Edit', edit_japproval_path(japproval) %></td>
+        <td><%= link_to 'Destroy', japproval, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Japproval', new_japproval_path %>
