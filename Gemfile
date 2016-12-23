@@ -1,6 +1,5 @@
 source 'http://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
@@ -24,13 +23,17 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-#gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
-#gem 'capistrano-rails', group: :development
+gem 'capistrano3-unicorn'
+
+gem 'capistrano-nginx'
+
+gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -54,7 +57,8 @@ gem 'execjs'
 
 gem 'thin'
 
-gem 'activeadmin',github:'activeadmin'
+gem 'activeadmin',:git => 'https://github.com/activeadmin/activeadmin'
+
 gem 'devise'
 
 gem 'paperclip'
@@ -67,3 +71,4 @@ gem 'carrierwave'
 
 gem 'bootstrap-sass'
 
+gem 'net-ssh', '2.9.2'
