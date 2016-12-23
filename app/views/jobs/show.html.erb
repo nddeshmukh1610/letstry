@@ -12,7 +12,7 @@
 				<div class="col-md-6">
 
 					<strong>
-					<%= link_to "Ask4Refferal", new_referral_path(:jobid => @job.id), class: "btn btn-green" %>
+					<%= link_to "Ask4Refferal", new_referral_path(:jobdesignation => job.designation), class: "btn btn-green" %>
 					</strong> 
 					
 					<br><br>
@@ -115,7 +115,7 @@
 					
 						
 					<strong>
-					<%= link_to "Ask4Refferal", new_referral_path(:jobid => @job.id), class: "btn btn-green" %>
+					<%= link_to "Ask4Refferal", new_referral_path(:jobdesignation => job.designation), class: "btn btn-green" %>
 					</strong> 
 					
 				</div>
@@ -138,7 +138,7 @@
 						<li><%= link_to "ABOUT US", about_path %></li>
 					</div>
 					<div class="job-side-wrap">
-						<li><%= link_to "CONTACT US", contact_path %></li>
+						<li><%= link_to "CONTACT US", new_contact_path %></li>
 					</div>
 					<div class="job-side-wrap">
 						<li><%= link_to "CAREERS", career_path %></li>	

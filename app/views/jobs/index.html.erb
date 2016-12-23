@@ -2,10 +2,10 @@
 		<div class="main-slider"><!-- start main-headline section -->
 					<div id="home-slider" class="owl-carousel owl-theme" style="display: block; opacity: 1;">
 						<div class="owl-wrapper-outer">
-							<div class="owl-wrapper" style="width: 6332px; left: 0px; display: block;">
+							<div class="owl-wrapper" style="width: 2170px; left: 0px; display: block;">
 								<div class="owl-item" style="width: 1583px;">
 									<div class="item-slide">
-										<%= image_tag("index.png", :alt => "Ask4Referral") %>
+										<%= image_tag("test.jpg", :alt => "Ask4Referral") %>
 									</div>
 								</div>
 							</div>
@@ -60,7 +60,7 @@
 									<td><%= job.location.name %></td>
 									<td><%= "#{@localminexp} - #{@localmaxexp} Y" %></td>														
 									<td><%= job.created_at.strftime("%d-%b-%Y") %></td>
-									<td><%= link_to "Ask4Refferal", new_referral_path(:jobid => job.id) %></td>
+									<td><%= link_to "Ask4Refferal", new_referral_path(:jobid => job.id, :jobdesignation => job.designation) %></td>
 								</tr>
 							<% end %>
 						<% end %>
@@ -191,13 +191,5 @@
 	</div>
 	
 </div>
-
-
-
-
-<div class="step-to">
-	<div class="container">
-				<h1><blink>Ask4Referral.com services are 100% free and will be free always.....</blink></h1>
-	</div>
-	
-</div>
+<br>
+<br>

@@ -3,7 +3,7 @@
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <title>Ask4Referral, Get Referred, Get Hired, Fast Recruitment</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=0.15">
         
         <!-- CSS -->
 		<%= stylesheet_link_tag  'style.css',  'bootstrap.min.css', 'font-awesome.css', 'jslider.css', 'jslider.round.css', 'owl.carousel.css', 'owl.theme.css', 'owl.transitions.css', media: 'all', 'data-turbolinks-track' => true %>
@@ -21,6 +21,7 @@
  <body>
 	<div id="wrapper"><!-- start main wrapper -->
 		<div id="header"><!-- start main header -->
+			<div class="top-line">&nbsp;</div>
 			<div class="top-line">&nbsp;</div>
 			<div class="top"><!-- top -->
 				<div class="container">
@@ -48,7 +49,7 @@
                                 <li><%= link_to "POST JOBS", new_job_path %></li>
                                 <li><%= link_to "FIND JOBS", findjobs_path(:keyword => "Null", :location => "Null")  %></li>
 								<li><%= link_to "ABOUT US", about_path %></li>
-                                <li><%= link_to "CONTACT US", contact_path %></li>
+                                <li><%= link_to "CONTACT US", new_contact_path %></li>
                                 <li><%= link_to "CAREERS", career_path %></li>								
 							</ul>
 						</nav>
@@ -62,9 +63,7 @@
 					
 
 
-<% flash.each do |key,value| %>
-<p><%= value %></P>
-<% end %>
+
 		
 <!--		<div class="hr-spacer100" ></div>
 				</br>
@@ -108,7 +107,7 @@
                                 <li><%= link_to "POST JOBS", new_job_path %></li>
                                 <li><%= link_to "FIND JOBS", findjobs_path(:keyword => "Null", :location => "Null")   %></li>
 								<li><%= link_to "ABOUT US", about_path %></li>
-                                <li><%= link_to "CONTACT US", contact_path %></li>
+                                <li><%= link_to "CONTACT US", new_contact_path %></li>
                                 <li><%= link_to "CAREERS", career_path %></li>	
 							</ul>
 						</div>
@@ -122,10 +121,7 @@
 							<p>Building Manyata, Near R.V. Public School</p>
 							<p>Mavali, Bengaluru-560004, India</p>
 							<p>Mobile: +91-9945508524</p>
-							<p>Email: contact_us@ask4referral.com</p>
-							<a href="https://www.facebook,com/ask4referral">@Facebook..</a>
-							<a href="https://www.facebook,com/ask4referral">@LinkedIn..</a>
-							<a href="https://www.facebook,com/ask4referral">@Twitter..</a>
+							<p>Email: <a href="contact_us@ask4referral.com"> contact_us@ask4referral.com</a></p>
 						</div>
 
 						

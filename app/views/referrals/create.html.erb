@@ -1,7 +1,7 @@
 
 <div class="main-page-title"><!-- start main page title -->
 			<div class="container">
-				<div class="post-job-title">You are requesting Referral for Job : <%=  @jobid1 %></div>				
+				<div class="post-job-title">Submitting Referral for Job : <%=  @jobdesignation1 %> <%= @jobid1 %></div>				
 			</div>
 
 </div><!-- end main page title -->
@@ -11,19 +11,23 @@
 		
 		<div class="container">
 		<div class="spacer-1">&nbsp;</div>
+			<% flash.each do |key,value| %>
+				<p><%= value %></P>
+			<% end %>
 			<div class="row">
 				<div class="col-md-8">
 				
 						<%= form_for(@referral) do |f| %>
 							<% if @referral.errors.any? %>
 							<div id="error_explanation">
-								<h3>Please try again with mandatory field marked as *</h3>
+								<b>Please fill mandatory field and try again</b>
 							
-								<ul>
+								<li>
+							
 								<%= @referral.errors.full_messages.first if @referral.errors.any? %>
-								</ul>
+								</li>
 							</div>
-						<% end %>
+						<% end %><br>
 						<form role="form" class="post-job-form">
 						
 						
@@ -138,6 +142,7 @@
 						</div>
 						
 						<%= f.hidden_field :jobid, :value => @jobid1 %>
+						<%= f.hidden_field :jobdesignation, :value => @jobdesignation1 %>
 						
 						<div class="form-group">
 							
@@ -166,7 +171,7 @@
 						<li><%= link_to "ABOUT US", about_path %></li>
 					</div>
 					<div class="job-side-wrap">
-						<li><%= link_to "CONTACT US", contact_path %></li>
+						<li><%= link_to "CONTACT US", new_contact_path %></li>
 					</div>
 					<div class="job-side-wrap">
 						<li><%= link_to "CAREERS", career_path %></li>	

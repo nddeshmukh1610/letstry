@@ -26,7 +26,7 @@
 						</div>		
 				
 						<div class="submit-btn" style="margin-top: 25px;">
-							<input type="submit" class="ui-btn" name="submit" value="Search Jobs">
+							<input type="submit" class="btn btn-green" name="submit" value="Search Jobs">
 						</div> <br><br>
 										
 				</form>
@@ -63,7 +63,7 @@
 										<td><%= job.location.name %></td>
 										<td><%= "#{@localminexp} - #{@localmaxexp} Y" %></td>														
 										<td><%= job.created_at.strftime("%d-%b-%Y") %></td>
-										<td><%= link_to "Ask4Refferal", new_referral_path(:jobid => job.id) %></td>
+										<td><%= link_to "Ask4Refferal", new_referral_path(:jobdesignation => job.designation) %></td>
 									</tr>
 								
 								    
@@ -99,7 +99,7 @@
 						<li><%= link_to "ABOUT US", about_path %></li>
 					</div>
 					<div class="job-side-wrap">
-						<li><%= link_to "CONTACT US", contact_path %></li>
+						<li><%= link_to "CONTACT US", new_contact_path %></li>
 					</div>
 					<div class="job-side-wrap">
 						<li><%= link_to "CAREERS", career_path %></li>	

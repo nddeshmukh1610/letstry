@@ -1,0 +1,129 @@
+
+<div class="main-page-title"><!-- start main page title -->
+			<div class="container">
+				<div class="post-job-title">Contact Us</div>				
+			</div>
+
+</div><!-- end main page title -->
+					
+ 
+		
+		
+<div class="container">
+		<div class="spacer-1">&nbsp;</div>
+			<% flash.each do |key,value| %>
+				<p><%= value %></P>
+			<% end %>
+			<div class="row">
+			
+				<div class="col-md-8">
+						<h3>Visit us : </h3>
+					<p>Ask4Referral.com<br>
+					Building Manyata,  Near R.V. Public School<br>
+					Mavali, Bengaluru-560004, India<br>
+					Mobile: +91-9945508524<br>
+					Email: contact_us@ask4referralcom</p><br>
+					
+					<h3>Message us : </h3>
+						<%= form_for(@contact) do |f| %>
+							<% if @contact.errors.any? %>
+							<div id="error_explanation">
+								<b>Please fill mandatory field and message us</b>
+							
+								<li>
+								<%= @contact.errors.full_messages.first if @contact.errors.any? %> 
+								</li><br>
+							</div>
+						<% end %>
+						<form role="form" class="post-job-form">
+						
+						<div class="row">
+								<div class="form-group col-md-6">
+									<strong>Name *</strong>
+									<%= f.text_field :contactperson, class: "form-control" %>
+								</div>
+								<div class="form-group col-md-6">
+									<strong>Contact Email *</strong>
+									<%= f.text_field :contactemail, placeholder: "Ex. ram@gmail.com", class: "form-control input" %>
+								</div>
+						</div>
+						
+						<div class="row">
+								<div class="form-group col-md-6">
+									<strong>Mobile *</strong>
+									<%= f.text_field :contactno, placeholder: "Ex. +919945508524", class: "form-control" %>
+								</div>				
+								<div class="form-group col-md-6">
+									<strong>Company Name *</strong>
+									<%= f.text_field :company, placeholder: "Ex. IBM, TechM, Wipro", class: "form-control" %>
+								</div>
+						</div>
+						
+						<div class="form-group">
+							<strong>Subject</strong>
+							<%= f.text_field :subject,  class: "form-control input" %>
+						</div>
+						
+										
+						<div class="hr-spacer"></div>
+							<div class="col-fullwidth">							
+								<strong>Message *</strong>
+								<%= f.text_area :description, class: "form-control" %><br>
+						</div>
+							
+						<div class="form-group">
+							
+							<%= f.submit  value="Contact Us", class: "btn btn-green" %>
+						</div>
+					</form>
+					<br>				
+					
+					
+					
+					<br>
+				</div>
+				
+				
+				
+				<div class="col-md-4">
+					<div class="job-side-wrap">
+						<li><%= link_to "HOME", root_path %></li>
+					</div>
+					
+					<div class="job-side-wrap">
+						<li><%= link_to "POST JOBS", new_job_path %></li>
+					</div>
+
+					<div class="job-side-wrap">
+						<li><%= link_to "FIND JOBS", findjobs_path(:keyword => "Null", :location => "Null")   %></li>
+					</div>
+
+					<div class="job-side-wrap">
+						<li><%= link_to "ABOUT US", about_path %></li>
+					</div>
+					<div class="job-side-wrap">
+						<li><%= link_to "CONTACT US", new_contact_path %></li>
+					</div>
+					<div class="job-side-wrap">
+						<li><%= link_to "CAREERS", career_path %></li>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="page-content"><!-- start content -->
+			<div class="content-about">
+				<div id="cs"><!-- CS -->
+					<div class="container">
+					<div class="spacer-1">&nbsp;</div>
+						<h2>Facing problem in posting jobs? </h2>
+						<p>
+							Please send job details on admin@ask4referral.com.
+						</p>
+						<h1 class="phone-cs">Call: +91-9945508524</h1>
+					</div>
+				</div><!-- CS -->
+			</div><!-- end content -->
+		</div><!-- end page content -->
+
+<% end %>

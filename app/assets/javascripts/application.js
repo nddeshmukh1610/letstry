@@ -12,11 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-
-//= require_tree .
 //= require ckeditor/init
-
-
 	function qs(search_for) {
 		var query = window.location.search.substring(1);
 		var parms = query.split('&');
@@ -27,9 +23,4 @@
 			}
 		}
 		return "";
-	}
-
-	function f1(q)
-	{
-		var x= document.getElementById(q).value;
 	}

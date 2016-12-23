@@ -11,19 +11,22 @@
 		
 		<div class="container">
 		<div class="spacer-1">&nbsp;</div>
+			<% flash.each do |key,value| %>
+				<p><%= value %></P>
+			<% end %>
 			<div class="row">
 				<div class="col-md-8">
 				
 						<%= form_for(@job) do |f| %>
 							<% if @job.errors.any? %>
 							<div id="error_explanation">
-								<h3>Please try again with mandatory field marked as *</h3>
+								<b>Please fill mandatory field and try again</b>
 							
-								<ul>
+								<li>
 								<%= @job.errors.full_messages.first if @job.errors.any? %>
-								</ul>
+								</li>
 							</div>
-						<% end %>
+						<% end %><br>
 						<form role="form" class="post-job-form">
 						
 						<div class="row">
@@ -151,7 +154,7 @@
 							
 						<div class="form-group">
 							
-							<%= f.submit  value="Post Job", class: "btn btn-default btn-green" %>
+							<%= f.submit  value="Post Job", class: "btn btn-green" %>
 						</div>
 					</form>
 					<div class="spacer-2">&nbsp;</div>
@@ -175,7 +178,7 @@
 						<li><%= link_to "ABOUT US", about_path %></li>
 					</div>
 					<div class="job-side-wrap">
-						<li><%= link_to "CONTACT US", contact_path %></li>
+						<li><%= link_to "CONTACT US", new_contact_path %></li>
 					</div>
 					<div class="job-side-wrap">
 						<li><%= link_to "CAREERS", career_path %></li>	

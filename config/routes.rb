@@ -1,18 +1,22 @@
 Rails.application.routes.draw do
+  resources :contacts
   resources :referrals
   mount Ckeditor::Engine => '/ckeditor'
   get 'pages/about'
 
-  get 'pages/contact'
+  
   
   get 'pages/career'
   
   get 'jobs/findjobs'
+  
+  
 
   get 'about', :to => 'pages#about'
-  get 'contact', to: 'pages#contact'
+  
   get 'career', to: 'pages#career'
   get 'findjobs', to: 'jobs#findjobs'
+  
   
   
   resources :japprovals
@@ -26,6 +30,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :pages
   resources :uploads
+  resources :contacts
   get 'home/index'
 
  
@@ -33,10 +38,11 @@ Rails.application.routes.draw do
   
   
   
-  #get 'referrals/index'
+  
   
   ActiveAdmin.routes(self)
   get '*path', to: 'jobs#index'
-  match '*a', :to => 'errors#routing', via: :get
+  get '*/*path', to: 'jobs#index'
+  
 
 end
